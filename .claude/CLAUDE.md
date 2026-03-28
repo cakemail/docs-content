@@ -1,0 +1,198 @@
+# AI CMS — Content Management via GitHub Issues
+
+This repository is an AI-driven CMS. Content is authored and maintained by Claude in response to GitHub Issues. Humans and AI agents create issues with instructions; Claude generates or edits content and opens PRs.
+
+## How it works
+
+1. An issue is created (by a human or an AI agent) with structured instructions
+2. Claude (@claude) is tagged on the issue
+3. Claude reads the issue, follows these instructions, and opens a PR
+4. A human reviews and merges (unless the issue is labeled `auto-approve`)
+5. Merging a source article triggers translation issues automatically
+
+## Repository structure
+
+```
+{lang}/{content-type}/{category}/{slug}.md
+```
+
+- **Languages**: `en`, `es`, `fr-ca`
+- **Content types**: `docs` (knowledge base), `best-practices`, `guides`, `api`, `resources-support`
+- **Slugs**: lowercase, hyphenated, descriptive (e.g., `adding-and-editing-users.md`)
+
+Index pages use `.mdx` and live alongside their directory (e.g., `en/best-practices.mdx`).
+
+## Frontmatter spec
+
+Every article MUST have frontmatter. When editing an existing article that lacks frontmatter, add it.
+
+### Source articles (original language)
+
+```yaml
+---
+title: "Article Title"
+lang: en
+content_type: docs
+translate_to: [es, fr-ca]
+---
+```
+
+### Translations
+
+```yaml
+---
+title: "Titre de l'article"
+lang: fr-ca
+content_type: docs
+source: en/docs/account-settings/adding-and-editing-users.md
+source_version: abc123f
+---
+```
+
+- `source_version` is the commit SHA of the source article at the time of translation
+- When processing a "fix translation" issue, update `source_version` to current HEAD of the source
+
+### Fields
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `title` | yes | Article title in the article's language |
+| `lang` | yes | Language code: `en`, `es`, `fr-ca` |
+| `content_type` | yes | One of: `docs`, `best-practices`, `guides`, `api`, `resources-support` |
+| `translate_to` | source only | Target languages for translation |
+| `source` | translations only | Path to source article (relative to repo root) |
+| `source_version` | translations only | Commit SHA of source when translated |
+
+## Processing issues
+
+### Issue type: `new-article`
+
+1. Read the issue instructions carefully
+2. Determine the file path from the content type, category, and a slug derived from the title
+3. Write the article following the appropriate content pattern (see below)
+4. Add frontmatter with `translate_to` based on the issue's translation checkboxes
+5. Open a PR linked to the issue
+
+### Issue type: `edit-article`
+
+1. Read the existing article at the specified path
+2. Apply the requested changes, preserving content you weren't asked to change
+3. Update the `title` in frontmatter if it changed
+4. Open a PR linked to the issue
+
+### Issue type: `fix-translation`
+
+1. Read the translation file and its source article
+2. Apply the fix described in the issue
+3. Update `source_version` to the current HEAD commit of the source article
+4. Open a PR linked to the issue
+
+### Issue type: `translation-update`
+
+1. Read the source article (at the commit specified in the issue)
+2. Read the existing translation (if any)
+3. Generate a full translation using the appropriate translator agent (see below)
+4. Set `source_version` to the commit SHA from the issue
+5. Open a PR linked to the issue
+
+## Content patterns
+
+### Knowledge base articles (`docs`)
+
+Structure: practical, task-oriented
+
+```markdown
+# Title
+
+Brief introduction explaining what this article covers.
+
+## Description
+
+What the feature/concept is and how it works.
+
+## Why it matters
+
+Why the reader should care.
+
+## Step-by-step instructions
+
+### To [accomplish task]
+
+1. Step one
+2. Step two
+3. Step three
+
+## Related articles
+
+- [Article title](relative-link)
+```
+
+### Best practices articles (`best-practices`)
+
+Structure: problem-solution oriented
+
+```markdown
+# Title
+
+## The Challenge
+
+What problem this addresses and why it matters.
+
+## The Impact
+
+Data, statistics, or concrete consequences.
+
+## The Solution
+
+### 1. First recommendation
+
+Explanation and details.
+
+### 2. Second recommendation
+
+Explanation and details.
+```
+
+## Writing style
+
+- Clear, direct, professional tone
+- Second person ("you") when addressing the reader
+- Short paragraphs — 3 sentences max
+- Use bullet points and numbered lists for scannability
+- Bold key terms on first use
+- Include concrete examples where helpful
+- No filler, no fluff
+
+## Translation
+
+When translating content, use the appropriate agent from `.claude/agents/localization-translation/`:
+
+| Target language | Agent |
+|----------------|-------|
+| `fr-ca` | `french-translator.md` + `french-canada-adapter.md` |
+| `es` | `spanish-translator.md` |
+
+**Always consult** the glossary at `.claude/agents/localization-translation/references/translation_glossary.json` for approved terminology.
+
+**Always consult** the Quebec French references at `.claude/agents/localization-translation/references/quebec-french/` when translating to `fr-ca`.
+
+Translation rules:
+- Translations are AI-owned — produce complete, publication-ready translations
+- Translate the `title` field in frontmatter
+- Preserve all formatting, links, and image references
+- Adapt idioms and cultural references — don't translate literally
+- Follow capitalization rules for the target language (e.g., sentence case in French and Spanish)
+- Never translate brand names (Cakemail, etc.)
+- File path mirrors source: if source is `en/docs/foo/bar.md`, translation is `fr-ca/docs/foo/bar.md`
+
+## Branch naming
+
+- New articles: `content/{slug}`
+- Edits: `edit/{slug}`
+- Translations: `translate/{lang}/{slug}`
+
+## PR conventions
+
+- Title: brief description of the change
+- Body: reference the issue with `Closes #N`
+- One article per PR (source article only — translations get their own issues and PRs)
