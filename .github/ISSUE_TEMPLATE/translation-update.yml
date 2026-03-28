@@ -1,0 +1,27 @@
+name: Translation Update
+description: "[Auto-created] Source article changed, translation needs update"
+labels: [translation-update, auto-approve]
+body:
+  - type: input
+    id: source_file
+    attributes:
+      label: Source file
+      description: "Path to the source article that changed"
+    validations:
+      required: true
+
+  - type: input
+    id: target_lang
+    attributes:
+      label: Target language
+      description: "Language code for the translation to update"
+    validations:
+      required: true
+
+  - type: input
+    id: source_commit
+    attributes:
+      label: Source commit
+      description: "Commit SHA of the source article change"
+    validations:
+      required: true

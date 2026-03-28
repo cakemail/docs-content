@@ -1,0 +1,54 @@
+name: New Article
+description: Request a new article to be written
+labels: [new-article]
+body:
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: Content type
+      options:
+        - docs
+        - best-practices
+        - guides
+    validations:
+      required: true
+
+  - type: dropdown
+    id: lang
+    attributes:
+      label: Source language
+      description: The language this article will be written in originally
+      options:
+        - en
+        - es
+        - fr-ca
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: "Directory within the content type (e.g., account-settings, deliverability, getting-started)"
+      placeholder: "e.g., account-settings"
+    validations:
+      required: true
+
+  - type: textarea
+    id: instructions
+    attributes:
+      label: Instructions
+      description: "What should the article cover? Include target audience, key points, tone, and any specific details."
+      placeholder: "Write an article about..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: translate_to
+    attributes:
+      label: Translate to
+      description: Select target languages for translation (after the source article is approved)
+      options:
+        - label: English (en)
+        - label: Spanish (es)
+        - label: French — Canada (fr-ca)

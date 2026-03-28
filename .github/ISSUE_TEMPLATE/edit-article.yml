@@ -1,0 +1,21 @@
+name: Edit Article
+description: Request changes to an existing article
+labels: [edit-article]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Article path
+      description: "Path to the article file relative to the repo root"
+      placeholder: "e.g., en/docs/account-settings/adding-and-editing-users.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: instructions
+    attributes:
+      label: What to change
+      description: "Describe the changes needed. Be specific about which sections to update."
+      placeholder: "Update the section about..."
+    validations:
+      required: true
