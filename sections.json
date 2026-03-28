@@ -1,0 +1,103 @@
+{
+  "sections": [
+    {
+      "id": "docs",
+      "href": "/docs",
+      "label": {
+        "en": "Documentation",
+        "fr": "Documentation",
+        "es": "Documentación"
+      },
+      "description": {
+        "en": "Learn how to use Cakemail to send emails, manage contacts, and build automations.",
+        "fr": "Apprenez à utiliser Cakemail pour envoyer des courriels, gérer vos contacts et créer des automatisations.",
+        "es": "Aprende a usar Cakemail para enviar correos, gestionar contactos y crear automatizaciones."
+      },
+      "redirectTo": "docs/first-steps"
+    },
+    {
+      "id": "best-practices",
+      "href": "/best-practices",
+      "label": {
+        "en": "Best Practices",
+        "fr": "Meilleures Pratiques",
+        "es": "Mejores Prácticas"
+      },
+      "description": {
+        "en": "Tips and strategies for email deliverability, engagement, and compliance.",
+        "fr": "Conseils et stratégies pour la délivrabilité, l'engagement et la conformité.",
+        "es": "Consejos y estrategias para la entregabilidad, el compromiso y el cumplimiento."
+      }
+    },
+    {
+      "id": "guides",
+      "href": "/guides",
+      "label": {
+        "en": "Developer Guides",
+        "fr": "Guides Développeur",
+        "es": "Guías para Desarrolladores"
+      },
+      "description": {
+        "en": "Step-by-step guides for integrating with the Cakemail API.",
+        "fr": "Guides étape par étape pour l'intégration avec l'API Cakemail.",
+        "es": "Guías paso a paso para integrar con la API de Cakemail."
+      }
+    },
+    {
+      "id": "claude",
+      "href": "/claude",
+      "label": {
+        "en": "Cakemail for Claude",
+        "fr": "Cakemail pour Claude",
+        "es": "Cakemail para Claude"
+      },
+      "description": {
+        "en": "Use Cakemail directly from Claude with our MCP integration.",
+        "fr": "Utilisez Cakemail directement depuis Claude avec notre intégration MCP.",
+        "es": "Usa Cakemail directamente desde Claude con nuestra integración MCP."
+      }
+    },
+    {
+      "id": "api",
+      "href": "/api",
+      "label": {
+        "en": "API Reference",
+        "fr": "Référence API",
+        "es": "Referencia API"
+      },
+      "description": {
+        "en": "Complete API reference with interactive examples.",
+        "fr": "Référence API complète avec des exemples interactifs.",
+        "es": "Referencia completa de la API con ejemplos interactivos."
+      },
+      "external": false
+    },
+    {
+      "id": "resources-support",
+      "href": "/resources-support",
+      "label": {
+        "en": "Resources & Support",
+        "fr": "Ressources & Support",
+        "es": "Recursos y Soporte"
+      },
+      "description": {
+        "en": "Changelog, release notes, and support resources.",
+        "fr": "Journal des modifications, notes de version et ressources de support.",
+        "es": "Registro de cambios, notas de versión y recursos de soporte."
+      },
+      "showInNav": false
+    }
+  ],
+  "footer": {
+    "copyright": {
+      "en": "© 2026 Cakemail. All rights reserved.",
+      "fr": "© 2026 Cakemail. Tous droits réservés.",
+      "es": "© 2026 Cakemail. Todos los derechos reservados."
+    },
+    "links": [
+      { "id": "cakemail-site", "label": { "en": "Cakemail", "fr": "Cakemail", "es": "Cakemail" }, "href": "https://www.cakemail.com" },
+      { "id": "status", "label": { "en": "Status", "fr": "Statut", "es": "Estado" }, "href": "https://status.cakemail.com" },
+      { "id": "support", "label": { "en": "Support", "fr": "Support", "es": "Soporte" }, "href": "mailto:support@cakemail.com" }
+    ]
+  }
+}

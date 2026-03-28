@@ -1,0 +1,1746 @@
+{
+  "en": {
+    "best-practices": [
+      {
+        "type": "doc",
+        "label": "Best Practices Overview",
+        "id": "best-practices"
+      },
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/getting-started"
+        },
+        "items": [
+          "best-practices/getting-started/email-marketing-fundamentals-a-beginners-guide",
+          "best-practices/getting-started/benefits-of-using-an-email-marketing-provider",
+          "best-practices/getting-started/creating-your-first-email-template-a-beginners-guide",
+          "best-practices/getting-started/glossary-of-email-marketing-terms"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "List Building",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/list-building"
+        },
+        "items": [
+          "best-practices/list-building/building-a-quality-email-list-best-practices",
+          "best-practices/list-building/how-to-build-your-email-list-the",
+          "best-practices/list-building/email-list-growth-strategies-to-attract-new-subscribers",
+          "best-practices/list-building/list-hygiene-maintaining-a-healthy-email-database",
+          "best-practices/list-building/double-opt-in-how-to-build-higher-quality-lists",
+          "best-practices/list-building/why-purchased-email-lists-hurt-your-business"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Email Design",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/email-design"
+        },
+        "items": [
+          "best-practices/email-design/email-design-checklist",
+          "best-practices/email-design/email-design-balancing-text-and-images-for-results",
+          "best-practices/email-design/why-image-only-emails-hurt-deliverability-and-engagement"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Deliverability",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/deliverability"
+        },
+        "items": [
+          "best-practices/deliverability/email-deliverability-optimization-complete-guide",
+          "best-practices/deliverability/choosing-the-right-sender-email-address",
+          "best-practices/deliverability/avoiding-noreply-email-addresses",
+          "best-practices/deliverability/why-you-should-use-your-own-domain-for-sending",
+          "best-practices/deliverability/how-to-avoid-spam-traps-and-protect-your-reputation",
+          "best-practices/deliverability/how-to-reduce-spam-complaints-prevention-strategies",
+          "best-practices/deliverability/dedicated-ip-addresses-when-and-why-you-need-one"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Engagement Optimization",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/engagement-optimization"
+        },
+        "items": [
+          "best-practices/engagement-optimization/email-subject-line-best-practices",
+          "best-practices/engagement-optimization/how-to-improve-email-open-rates-expert-tips",
+          "best-practices/engagement-optimization/how-to-increase-email-engagement-proven-strategies",
+          "best-practices/engagement-optimization/optimal-send-times-and-frequency-maximize-engagement",
+          "best-practices/engagement-optimization/re-engagement-campaigns-win-back-inactive-subscribers",
+          "best-practices/engagement-optimization/email-marketing-benchmarks-what-are-good-open-rates"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Compliance & Legal",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/compliance-legal"
+        },
+        "items": [
+          "best-practices/compliance-legal/global-email-compliance-understanding-anti-spam-laws",
+          "best-practices/compliance-legal/can-spam-compliance-essential-requirements",
+          "best-practices/compliance-legal/casl-compliance-canadas-anti-spam-law-explained",
+          "best-practices/compliance-legal/gdpr-and-email-marketing-what-you-need-to-know",
+          "best-practices/compliance-legal/required-email-content-for-legal-compliance",
+          "best-practices/compliance-legal/permission-based-email-marketing-why-it-matters",
+          "best-practices/compliance-legal/email-permission-legal-requirements-and-best-practices",
+          "best-practices/compliance-legal/why-you-should-never-sell-your-email-list"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Advanced Strategies",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/advanced-strategies"
+        },
+        "items": [
+          "best-practices/advanced-strategies/email-content-strategy-planning-successful-campaigns",
+          "best-practices/advanced-strategies/sending-email-campaigns-tips-and-recommendations",
+          "best-practices/advanced-strategies/email-sender-reputation-how-to-build-and-maintain",
+          "best-practices/advanced-strategies/how-to-change-your-sender-email-address"
+        ]
+      }
+    ],
+    "claude": [
+      {
+        "type": "category",
+        "label": "Cakemail for Claude",
+        "collapsed": false,
+        "items": [
+          "claude/overview",
+          "claude/beta",
+          "claude/installation"
+        ]
+      }
+    ],
+    "docs": [
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "collapsed": true,
+        "items": [
+          "docs/first-steps"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Account Settings",
+        "collapsed": true,
+        "items": [
+          "docs/account-settings/adding-and-editing-users",
+          "docs/account-settings/updating-my-company-profile",
+          "docs/account-settings/setting-your-timezone",
+          "docs/account-settings/multi-factor-authentication-mfa",
+          "docs/account-settings/configuring-your-brand",
+          "docs/account-settings/canceling-your-account",
+          "docs/account-settings/suppression-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Senders",
+        "collapsed": true,
+        "items": [
+          "docs/senders/managing-senders",
+          "docs/senders/authenticating-domains"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Campaigns Creation",
+        "collapsed": true,
+        "items": [
+          "docs/campaign-creation/creating-campaigns",
+          "docs/campaign-creation/duplicating-campaigns",
+          "docs/campaign-creation/deleting-a-campaign-draft",
+          "docs/campaign-creation/using-the-email-designer",
+          "docs/campaign-creation/creating-mobile-and-desktop-campaign-versions",
+          "docs/campaign-creation/adding-a-video-to-a-campaign",
+          "docs/campaign-creation/adding-pdf-attachments",
+          "docs/campaign-creation/adding-a-calendar-link-to-a-campaign",
+          "docs/campaign-creation/integrating-survey-forms",
+          "docs/campaign-creation/creating-effective-preheaders",
+          "docs/campaign-creation/adding-unsubscribe-links",
+          "docs/campaign-creation/adding-your-physical-address",
+          "docs/campaign-creation/testing-your-campaign",
+          "docs/campaign-creation/creating-ab-tests-campaigns",
+          "docs/campaign-creation/uploading-to-the-file-manager",
+          "docs/campaign-creation/adding-rss-feeds",
+          "docs/campaign-creation/create-utm-tracking-links"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Personalization",
+        "collapsed": true,
+        "items": [
+          "docs/personalization/using-dynamic-content",
+          "docs/personalization/adding-merge-tags-to-a-campaign",
+          "docs/personalization/display-conditions",
+          "docs/personalization/using-merge-tags-and-fallbacks",
+          "docs/personalization/adding-a-date-merge-tag"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "AI Assistant",
+        "collapsed": true,
+        "items": [
+          "docs/ai/creating-content-with-ai",
+          "docs/ai/creating-subject-lines-with-ai",
+          "docs/ai/creating-email-preheaders-with-ai"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Automations",
+        "collapsed": true,
+        "items": [
+          "docs/automations/understanding-email-automation",
+          "docs/automations/creating-an-automated-welcome-email",
+          "docs/automations/creating-an-automation-with-branching-conditions",
+          "docs/automations/creating-a-looping-automation",
+          "docs/automations/tracking-customer-journeys-with-custom-attributes"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Forms",
+        "collapsed": true,
+        "items": [
+          "docs/audience-building/subscription-confirmation-email",
+          "docs/audience-building/default-sender-address-and-language",
+          "docs/audience-building/subscriber-preference-center"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Audience",
+        "collapsed": true,
+        "items": [
+          "docs/audience/managing-contact-lists",
+          "docs/audience/importing-contacts-into-your-lists",
+          "docs/audience/updating-contact-information",
+          "docs/audience/removing-a-contact",
+          "docs/audience/adding-attributes-to-your-list",
+          "docs/audience/creating-dynamic-segments",
+          "docs/audience/using-tags-to-track-engagement",
+          "docs/audience/contact-status",
+          "docs/audience/exporting-a-contact-list",
+          "docs/audience/deleting-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Analytics",
+        "collapsed": true,
+        "items": [
+          "docs/analytics/understanding-campaign-reports",
+          "docs/analytics/tracking-campaign-performance",
+          "docs/analytics/email-click-rates",
+          "docs/analytics/open-rates",
+          "docs/analytics/email-bounces",
+          "docs/analytics/tracking-click-rate-activity"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Email Templates",
+        "collapsed": true,
+        "items": [
+          "docs/email-templates/working-with-smart-templates",
+          "docs/email-templates/saving-campaigns-as-templates",
+          "docs/email-templates/deleting-a-template",
+          "docs/email-templates/importing-your-html-code"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Integrations",
+        "collapsed": true,
+        "items": [
+          "docs/integrations/connecting-cakemail-with-zapier"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Partners",
+        "collapsed": true,
+        "items": [
+          "docs/partners/customizing-your-default-reseller-domain",
+          "docs/partners/managing-client-features",
+          "docs/partners/client-template-sharing",
+          "docs/partners/system-email-customization"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Delivery Troubleshooting",
+        "collapsed": true,
+        "items": [
+          "docs/delivery-troubleshooting/email-deliverability",
+          "docs/delivery-troubleshooting/role-based-emails",
+          "docs/delivery-troubleshooting/missing-emails",
+          "docs/delivery-troubleshooting/under-review-warnings",
+          "docs/delivery-troubleshooting/spam-and-promotions-tab",
+          "docs/delivery-troubleshooting/email-opens",
+          "docs/delivery-troubleshooting/image-display-issues",
+          "docs/delivery-troubleshooting/account-suspensions",
+          "docs/delivery-troubleshooting/delivery-delays",
+          "docs/delivery-troubleshooting/domain-blacklisting",
+          "docs/delivery-troubleshooting/feedback-loops",
+          "docs/delivery-troubleshooting/email-bounces"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Billing",
+        "collapsed": true,
+        "items": [
+          "docs/billing/choosing-your-plan",
+          "docs/billing/protecting-your-information"
+        ]
+      }
+    ],
+    "guides": [
+      {
+        "type": "category",
+        "label": "Cakemail API",
+        "collapsed": false,
+        "items": [
+          "guides/getting-started-ng-api",
+          "guides/managing-your-contacts",
+          "guides/sending-your-first-campaign",
+          "guides/managing-your-users",
+          "guides/using-templates",
+          "guides/using-webhooks",
+          "guides/automating-your-emails"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Email API",
+        "collapsed": true,
+        "items": [
+          "guides/getting-started-email-api"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Partners API",
+        "collapsed": true,
+        "items": [
+          "guides/working-as-a-partner",
+          "guides/login-to-cakemail-next-gen-from-inside-your-app"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "API clients",
+        "collapsed": true,
+        "items": [
+          "guides/next-gen-api-v10A"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Classic API",
+        "collapsed": true,
+        "items": [
+          "guides/classic-api-compatibility"
+        ]
+      }
+    ],
+    "resources-support": [
+      {
+        "type": "category",
+        "label": "Support & Resources",
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Contact Support"
+          },
+          {
+            "type": "link",
+            "label": "Status Page"
+          },
+          {
+            "type": "link",
+            "label": "Product Release Notes"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "API Changelog",
+        "collapsed": true,
+        "items": [
+          "resources-support/changelog/next-gen-api-v118",
+          "resources-support/changelog/next-gen-api-v117",
+          "resources-support/changelog/next-gen-api-v115",
+          "resources-support/changelog/next-gen-api-v114",
+          "resources-support/changelog/next-gen-api-v113",
+          "resources-support/changelog/next-gen-api-v112",
+          "resources-support/changelog/next-gen-api-v111",
+          "resources-support/changelog/next-gen-api-v110",
+          "resources-support/changelog/next-gen-api-v19",
+          "resources-support/changelog/next-gen-api-v18",
+          "resources-support/changelog/next-gen-api-v17",
+          "resources-support/changelog/next-gen-api-v16",
+          "resources-support/changelog/next-gen-api-v15",
+          "resources-support/changelog/next-gen-api-v14",
+          "resources-support/changelog/next-gen-api-v13",
+          "resources-support/changelog/next-gen-api-v12",
+          "resources-support/changelog/next-gen-api-v11",
+          "resources-support/changelog/next-gen-api-v10"
+        ]
+      }
+    ]
+  },
+  "es": {
+    "best-practices": [
+      {
+        "type": "doc",
+        "label": "Best Practices Overview",
+        "id": "best-practices"
+      },
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/getting-started"
+        },
+        "items": [
+          "best-practices/getting-started/email-marketing-fundamentals-a-beginners-guide",
+          "best-practices/getting-started/benefits-of-using-an-email-marketing-provider",
+          "best-practices/getting-started/creating-your-first-email-template-a-beginners-guide"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "List Building",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/list-building"
+        },
+        "items": [
+          "best-practices/list-building/building-a-quality-email-list-best-practices",
+          "best-practices/list-building/how-to-build-your-email-list-the",
+          "best-practices/list-building/email-list-growth-strategies-to-attract-new-subscribers",
+          "best-practices/list-building/list-hygiene-maintaining-a-healthy-email-database",
+          "best-practices/list-building/double-opt-in-how-to-build-higher-quality-lists",
+          "best-practices/list-building/why-purchased-email-lists-hurt-your-business"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Email Design",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/email-design"
+        },
+        "items": [
+          "best-practices/email-design/email-design-checklist",
+          "best-practices/email-design/email-design-balancing-text-and-images-for-results",
+          "best-practices/email-design/why-image-only-emails-hurt-deliverability-and-engagement"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Deliverability",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/deliverability"
+        },
+        "items": [
+          "best-practices/deliverability/email-deliverability-optimization-complete-guide",
+          "best-practices/deliverability/choosing-the-right-sender-email-address",
+          "best-practices/deliverability/avoiding-noreply-email-addresses",
+          "best-practices/deliverability/why-you-should-use-your-own-domain-for-sending",
+          "best-practices/deliverability/how-to-avoid-spam-traps-and-protect-your-reputation",
+          "best-practices/deliverability/how-to-reduce-spam-complaints-prevention-strategies",
+          "best-practices/deliverability/dedicated-ip-addresses-when-and-why-you-need-one"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Engagement Optimization",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/engagement-optimization"
+        },
+        "items": [
+          "best-practices/engagement-optimization/email-subject-line-best-practices",
+          "best-practices/engagement-optimization/how-to-improve-email-open-rates-expert-tips",
+          "best-practices/engagement-optimization/how-to-increase-email-engagement-proven-strategies",
+          "best-practices/engagement-optimization/optimal-send-times-and-frequency-maximize-engagement",
+          "best-practices/engagement-optimization/re-engagement-campaigns-win-back-inactive-subscribers",
+          "best-practices/engagement-optimization/email-marketing-benchmarks-what-are-good-open-rates"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Compliance & Legal",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/compliance-legal"
+        },
+        "items": [
+          "best-practices/compliance-legal/global-email-compliance-understanding-anti-spam-laws",
+          "best-practices/compliance-legal/can-spam-compliance-essential-requirements",
+          "best-practices/compliance-legal/casl-compliance-canadas-anti-spam-law-explained",
+          "best-practices/compliance-legal/gdpr-and-email-marketing-what-you-need-to-know",
+          "best-practices/compliance-legal/required-email-content-for-legal-compliance",
+          "best-practices/compliance-legal/permission-based-email-marketing-why-it-matters",
+          "best-practices/compliance-legal/email-permission-legal-requirements-and-best-practices",
+          "best-practices/compliance-legal/why-you-should-never-sell-your-email-list"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Advanced Strategies",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/advanced-strategies"
+        },
+        "items": [
+          "best-practices/advanced-strategies/email-content-strategy-planning-successful-campaigns",
+          "best-practices/advanced-strategies/sending-email-campaigns-tips-and-recommendations",
+          "best-practices/advanced-strategies/email-sender-reputation-how-to-build-and-maintain",
+          "best-practices/advanced-strategies/how-to-change-your-sender-email-address"
+        ]
+      }
+    ],
+    "docs": [
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "collapsed": true,
+        "items": [
+          "docs/first-steps"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Account Settings",
+        "collapsed": true,
+        "items": [
+          "docs/account-settings/adding-and-editing-users",
+          "docs/account-settings/updating-my-company-profile",
+          "docs/account-settings/setting-your-timezone",
+          "docs/account-settings/multi-factor-authentication-mfa",
+          "docs/account-settings/configuring-your-brand",
+          "docs/account-settings/canceling-your-account",
+          "docs/account-settings/suppression-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Senders",
+        "collapsed": true,
+        "items": [
+          "docs/senders/managing-senders",
+          "docs/senders/authenticating-domains"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Campaigns Creation",
+        "collapsed": true,
+        "items": [
+          "docs/campaign-creation/creating-campaigns",
+          "docs/campaign-creation/duplicating-campaigns",
+          "docs/campaign-creation/deleting-a-campaign-draft",
+          "docs/campaign-creation/using-the-email-designer",
+          "docs/campaign-creation/creating-mobile-and-desktop-campaign-versions",
+          "docs/campaign-creation/adding-a-video-to-a-campaign",
+          "docs/campaign-creation/adding-pdf-attachments",
+          "docs/campaign-creation/adding-a-calendar-link-to-a-campaign",
+          "docs/campaign-creation/integrating-survey-forms",
+          "docs/campaign-creation/creating-effective-preheaders",
+          "docs/campaign-creation/adding-unsubscribe-links",
+          "docs/campaign-creation/adding-your-physical-address",
+          "docs/campaign-creation/testing-your-campaign",
+          "docs/campaign-creation/creating-ab-tests-campaigns",
+          "docs/campaign-creation/uploading-to-the-file-manager",
+          "docs/campaign-creation/adding-rss-feeds",
+          "docs/campaign-creation/create-utm-tracking-links"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Personalization",
+        "collapsed": true,
+        "items": [
+          "docs/personalization/using-dynamic-content",
+          "docs/personalization/adding-merge-tags-to-a-campaign",
+          "docs/personalization/display-conditions",
+          "docs/personalization/using-merge-tags-and-fallbacks",
+          "docs/personalization/adding-a-date-merge-tag"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "AI Assistant",
+        "collapsed": true,
+        "items": [
+          "docs/ai/creating-content-with-ai",
+          "docs/ai/creating-subject-lines-with-ai",
+          "docs/ai/creating-email-preheaders-with-ai"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Automations",
+        "collapsed": true,
+        "items": [
+          "docs/automations/understanding-email-automation",
+          "docs/automations/creating-an-automated-welcome-email",
+          "docs/automations/creating-an-automation-with-branching-conditions",
+          "docs/automations/creating-a-looping-automation",
+          "docs/automations/tracking-customer-journeys-with-custom-attributes"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Forms",
+        "collapsed": true,
+        "items": [
+          "docs/audience-building/subscription-confirmation-email",
+          "docs/audience-building/default-sender-address-and-language",
+          "docs/audience-building/subscriber-preference-center"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Audience",
+        "collapsed": true,
+        "items": [
+          "docs/audience/managing-contact-lists",
+          "docs/audience/importing-contacts-into-your-lists",
+          "docs/audience/updating-contact-information",
+          "docs/audience/removing-a-contact",
+          "docs/audience/adding-attributes-to-your-list",
+          "docs/audience/creating-dynamic-segments",
+          "docs/audience/using-tags-to-track-engagement",
+          "docs/audience/contact-status",
+          "docs/audience/exporting-a-contact-list",
+          "docs/audience/deleting-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Analytics",
+        "collapsed": true,
+        "items": [
+          "docs/analytics/understanding-campaign-reports",
+          "docs/analytics/tracking-campaign-performance",
+          "docs/analytics/email-click-rates",
+          "docs/analytics/open-rates",
+          "docs/analytics/email-bounces",
+          "docs/analytics/tracking-click-rate-activity"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Email Templates",
+        "collapsed": true,
+        "items": [
+          "docs/email-templates/working-with-smart-templates",
+          "docs/email-templates/saving-campaigns-as-templates",
+          "docs/email-templates/deleting-a-template",
+          "docs/email-templates/importing-your-html-code"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Integrations",
+        "collapsed": true,
+        "items": [
+          "docs/integrations/connecting-cakemail-with-zapier"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Partners",
+        "collapsed": true,
+        "items": [
+          "docs/partners/customizing-your-default-reseller-domain",
+          "docs/partners/managing-client-features",
+          "docs/partners/client-template-sharing",
+          "docs/partners/system-email-customization"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Delivery Troubleshooting",
+        "collapsed": true,
+        "items": [
+          "docs/delivery-troubleshooting/email-deliverability",
+          "docs/delivery-troubleshooting/role-based-emails",
+          "docs/delivery-troubleshooting/missing-emails",
+          "docs/delivery-troubleshooting/under-review-warnings",
+          "docs/delivery-troubleshooting/spam-and-promotions-tab",
+          "docs/delivery-troubleshooting/email-opens",
+          "docs/delivery-troubleshooting/image-display-issues",
+          "docs/delivery-troubleshooting/account-suspensions",
+          "docs/delivery-troubleshooting/delivery-delays",
+          "docs/delivery-troubleshooting/domain-blacklisting",
+          "docs/delivery-troubleshooting/feedback-loops",
+          "docs/delivery-troubleshooting/email-bounces"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Billing",
+        "collapsed": true,
+        "items": [
+          "docs/billing/choosing-your-plan",
+          "docs/billing/protecting-your-information"
+        ]
+      }
+    ]
+  },
+  "fr-ca": {
+    "best-practices": [
+      {
+        "type": "doc",
+        "label": "Aper\u00e7u des bonnes pratiques",
+        "id": "best-practices"
+      },
+      {
+        "type": "category",
+        "label": "D\u00e9buter",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/getting-started"
+        },
+        "items": [
+          "best-practices/getting-started/email-marketing-fundamentals-a-beginners-guide",
+          "best-practices/getting-started/benefits-of-using-an-email-marketing-provider",
+          "best-practices/getting-started/creating-your-first-email-template-a-beginners-guide",
+          "best-practices/getting-started/glossary-of-email-marketing-terms"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Construction de listes",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/list-building"
+        },
+        "items": [
+          "best-practices/list-building/building-a-quality-email-list-best-practices",
+          "best-practices/list-building/double-opt-in-how-to-build-higher-quality-lists",
+          "best-practices/list-building/email-list-growth-strategies-to-attract-new-subscribers",
+          "best-practices/list-building/list-hygiene-maintaining-a-healthy-email-database",
+          "best-practices/list-building/why-purchased-email-lists-hurt-your-business",
+          "best-practices/list-building/how-to-build-your-email-list-the"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Conception de courriel",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/email-design"
+        },
+        "items": [
+          "best-practices/email-design/email-design-checklist",
+          "best-practices/email-design/email-design-balancing-text-and-images-for-results",
+          "best-practices/email-design/why-image-only-emails-hurt-deliverability-and-engagement"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "D\u00e9livrabilit\u00e9",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/deliverability"
+        },
+        "items": [
+          "best-practices/deliverability/email-deliverability-optimization-complete-guide",
+          "best-practices/deliverability/choosing-the-right-sender-email-address",
+          "best-practices/deliverability/why-you-should-use-your-own-domain-for-sending",
+          "best-practices/deliverability/avoiding-noreply-email-addresses",
+          "best-practices/deliverability/how-to-avoid-spam-traps-and-protect-your-reputation",
+          "best-practices/deliverability/how-to-reduce-spam-complaints-prevention-strategies",
+          "best-practices/deliverability/dedicated-ip-addresses-when-and-why-you-need-one"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Optimisation de l'engagement",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/engagement-optimization"
+        },
+        "items": [
+          "best-practices/engagement-optimization/email-subject-line-best-practices",
+          "best-practices/engagement-optimization/how-to-improve-email-open-rates-expert-tips",
+          "best-practices/engagement-optimization/how-to-increase-email-engagement-proven-strategies",
+          "best-practices/engagement-optimization/email-marketing-benchmarks-what-are-good-open-rates",
+          "best-practices/engagement-optimization/optimal-send-times-and-frequency-maximize-engagement",
+          "best-practices/engagement-optimization/re-engagement-campaigns-win-back-inactive-subscribers"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Conformit\u00e9 et aspects l\u00e9gaux",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/compliance-legal"
+        },
+        "items": [
+          "best-practices/compliance-legal/casl-compliance-canadas-anti-spam-law-explained",
+          "best-practices/compliance-legal/can-spam-compliance-essential-requirements",
+          "best-practices/compliance-legal/gdpr-and-email-marketing-what-you-need-to-know",
+          "best-practices/compliance-legal/global-email-compliance-understanding-anti-spam-laws",
+          "best-practices/compliance-legal/permission-based-email-marketing-why-it-matters",
+          "best-practices/compliance-legal/email-permission-legal-requirements-and-best-practices",
+          "best-practices/compliance-legal/required-email-content-for-legal-compliance",
+          "best-practices/compliance-legal/why-you-should-never-sell-your-email-list"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Strat\u00e9gies avanc\u00e9es",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/advanced-strategies"
+        },
+        "items": [
+          "best-practices/advanced-strategies/email-content-strategy-planning-successful-campaigns",
+          "best-practices/advanced-strategies/email-sender-reputation-how-to-build-and-maintain",
+          "best-practices/advanced-strategies/sending-email-campaigns-tips-and-recommendations",
+          "best-practices/advanced-strategies/how-to-change-your-sender-email-address"
+        ]
+      }
+    ],
+    "docs": [
+      {
+        "type": "category",
+        "label": "D\u00e9buter",
+        "collapsed": true,
+        "items": [
+          "docs/first-steps"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Param\u00e8tres de compte",
+        "collapsed": true,
+        "items": [
+          "docs/account-settings/adding-and-editing-users",
+          "docs/account-settings/updating-my-company-profile",
+          "docs/account-settings/setting-your-timezone",
+          "docs/account-settings/multi-factor-authentication-mfa",
+          "docs/account-settings/configuring-your-brand",
+          "docs/account-settings/canceling-your-account",
+          "docs/account-settings/suppression-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Exp\u00e9diteurs",
+        "collapsed": true,
+        "items": [
+          "docs/senders/managing-senders",
+          "docs/senders/authenticating-domains"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Cr\u00e9ation de campagnes",
+        "collapsed": true,
+        "items": [
+          "docs/campaign-creation/creating-campaigns",
+          "docs/campaign-creation/duplicating-campaigns",
+          "docs/campaign-creation/deleting-a-campaign-draft",
+          "docs/campaign-creation/using-the-email-designer",
+          "docs/campaign-creation/creating-mobile-and-desktop-campaign-versions",
+          "docs/campaign-creation/adding-a-video-to-a-campaign",
+          "docs/campaign-creation/adding-pdf-attachments",
+          "docs/campaign-creation/adding-a-calendar-link-to-a-campaign",
+          "docs/campaign-creation/integrating-survey-forms",
+          "docs/campaign-creation/creating-effective-preheaders",
+          "docs/campaign-creation/adding-unsubscribe-links",
+          "docs/campaign-creation/adding-your-physical-address",
+          "docs/campaign-creation/testing-your-campaign",
+          "docs/campaign-creation/creating-ab-tests-campaigns",
+          "docs/campaign-creation/uploading-to-the-file-manager",
+          "docs/campaign-creation/adding-rss-feeds",
+          "docs/campaign-creation/create-utm-tracking-links"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Personnalisation",
+        "collapsed": true,
+        "items": [
+          "docs/personalization/using-dynamic-content",
+          "docs/personalization/adding-merge-tags-to-a-campaign",
+          "docs/personalization/display-conditions",
+          "docs/personalization/using-merge-tags-and-fallbacks",
+          "docs/personalization/adding-a-date-merge-tag"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Assistant IA",
+        "collapsed": true,
+        "items": [
+          "docs/ai/creating-content-with-ai",
+          "docs/ai/creating-email-preheaders-with-ai"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Automatisations",
+        "collapsed": true,
+        "items": [
+          "docs/automations/understanding-email-automation",
+          "docs/automations/creating-an-automated-welcome-email",
+          "docs/automations/creating-an-automation-with-branching-conditions",
+          "docs/automations/creating-a-looping-automation",
+          "docs/automations/tracking-customer-journeys-with-custom-attributes"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Formulaires",
+        "collapsed": true,
+        "items": [
+          "docs/audience-building/subscription-confirmation-email",
+          "docs/audience-building/default-sender-address-and-language",
+          "docs/audience-building/subscriber-preference-center"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Audience",
+        "collapsed": true,
+        "items": [
+          "docs/audience/managing-contact-lists",
+          "docs/audience/importing-contacts-into-your-lists",
+          "docs/audience/updating-contact-information",
+          "docs/audience/removing-a-contact",
+          "docs/audience/adding-attributes-to-your-list",
+          "docs/audience/creating-dynamic-segments",
+          "docs/audience/using-tags-to-track-engagement",
+          "docs/audience/contact-status",
+          "docs/audience/exporting-a-contact-list",
+          "docs/audience/deleting-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Analyses",
+        "collapsed": true,
+        "items": [
+          "docs/analytics/understanding-campaign-reports",
+          "docs/analytics/tracking-campaign-performance",
+          "docs/analytics/email-click-rates",
+          "docs/analytics/open-rates",
+          "docs/analytics/email-bounces",
+          "docs/analytics/tracking-click-rate-activity"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Mod\u00e8les d'email",
+        "collapsed": true,
+        "items": [
+          "docs/email-templates/working-with-smart-templates",
+          "docs/email-templates/saving-campaigns-as-templates",
+          "docs/email-templates/deleting-a-template",
+          "docs/email-templates/importing-your-html-code"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Int\u00e9grations",
+        "collapsed": true,
+        "items": [
+          "docs/integrations/connecting-cakemail-with-zapier"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Partenaires",
+        "collapsed": true,
+        "items": [
+          "docs/partners/customizing-your-default-reseller-domain",
+          "docs/partners/managing-client-features",
+          "docs/partners/client-template-sharing",
+          "docs/partners/system-email-customization"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "D\u00e9pannage de livraison",
+        "collapsed": true,
+        "items": [
+          "docs/delivery-troubleshooting/email-deliverability",
+          "docs/delivery-troubleshooting/role-based-emails",
+          "docs/delivery-troubleshooting/missing-emails",
+          "docs/delivery-troubleshooting/under-review-warnings",
+          "docs/delivery-troubleshooting/spam-and-promotions-tab",
+          "docs/delivery-troubleshooting/email-opens",
+          "docs/delivery-troubleshooting/image-display-issues",
+          "docs/delivery-troubleshooting/account-suspensions",
+          "docs/delivery-troubleshooting/delivery-delays",
+          "docs/delivery-troubleshooting/domain-blacklisting",
+          "docs/delivery-troubleshooting/feedback-loops",
+          "docs/delivery-troubleshooting/email-bounces"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Facturation",
+        "collapsed": true,
+        "items": [
+          "docs/billing/choosing-your-plan",
+          "docs/billing/protecting-your-information"
+        ]
+      }
+    ],
+    "resources-support": [
+      {
+        "type": "category",
+        "label": "Support et Ressources",
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Contact Support"
+          },
+          {
+            "type": "link",
+            "label": "Status Page"
+          },
+          {
+            "type": "link",
+            "label": "Product Release Notes"
+          }
+        ]
+      }
+    ]
+  },
+  "fr-qc": {
+    "best-practices": [
+      {
+        "type": "doc",
+        "label": "Vue d'ensemble des bonnes pratiques",
+        "id": "fr-qc/best-practices"
+      },
+      {
+        "type": "category",
+        "label": "D\u00e9buter (pour les nouveaux)",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "fr-qc/best-practices/getting-started"
+        },
+        "items": [
+          "fr-qc/best-practices/getting-started/email-marketing-fundamentals-a-beginners-guide",
+          "fr-qc/best-practices/getting-started/benefits-of-using-an-email-marketing-provider",
+          "fr-qc/best-practices/getting-started/creating-your-first-email-template-a-beginners-guide",
+          "fr-qc/best-practices/getting-started/glossary-of-email-marketing-terms"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "B\u00e2tir ta gang d'abonn\u00e9s",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "fr-qc/best-practices/list-building"
+        },
+        "items": [
+          "fr-qc/best-practices/list-building/building-a-quality-email-list-best-practices",
+          "fr-qc/best-practices/list-building/double-opt-in-how-to-build-higher-quality-lists",
+          "fr-qc/best-practices/list-building/email-list-growth-strategies-to-attract-new-subscribers",
+          "fr-qc/best-practices/list-building/list-hygiene-maintaining-a-healthy-email-database",
+          "fr-qc/best-practices/list-building/why-purchased-email-lists-hurt-your-business",
+          "fr-qc/best-practices/list-building/how-to-build-your-email-list-the-right-way"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Design de courriels qui pognet",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "fr-qc/best-practices/email-design"
+        },
+        "items": [
+          "fr-qc/best-practices/email-design/email-design-checklist",
+          "fr-qc/best-practices/email-design/email-design-balancing-text-and-images-for-results",
+          "fr-qc/best-practices/email-design/why-image-only-emails-hurt-deliverability-and-engagement"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Faire passer le message",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "fr-qc/best-practices/deliverability"
+        },
+        "items": [
+          "fr-qc/best-practices/deliverability/email-deliverability-optimization-complete-guide",
+          "fr-qc/best-practices/deliverability/choosing-the-right-sender-email-address",
+          "fr-qc/best-practices/deliverability/why-you-should-use-your-own-domain-for-sending",
+          "fr-qc/best-practices/deliverability/avoiding-noreply-email-addresses",
+          "fr-qc/best-practices/deliverability/how-to-avoid-spam-traps-and-protect-your-reputation",
+          "fr-qc/best-practices/deliverability/how-to-reduce-spam-complaints-prevention-strategies",
+          "fr-qc/best-practices/deliverability/dedicated-ip-addresses-when-and-why-you-need-one"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Faire r\u00e9agir ton monde",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "fr-qc/best-practices/engagement-optimization"
+        },
+        "items": [
+          "fr-qc/best-practices/engagement-optimization/email-subject-line-best-practices",
+          "fr-qc/best-practices/engagement-optimization/how-to-improve-email-open-rates-expert-tips",
+          "fr-qc/best-practices/engagement-optimization/how-to-increase-email-engagement-proven-strategies",
+          "fr-qc/best-practices/engagement-optimization/email-marketing-benchmarks-what-are-good-open-rates",
+          "fr-qc/best-practices/engagement-optimization/optimal-send-times-and-frequency-maximize-engagement",
+          "fr-qc/best-practices/engagement-optimization/re-engagement-campaigns-win-back-inactive-subscribers"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Rester dans le legal",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "fr-qc/best-practices/compliance-legal"
+        },
+        "items": [
+          "fr-qc/best-practices/compliance-legal/casl-compliance-canadas-anti-spam-law-explained",
+          "fr-qc/best-practices/compliance-legal/can-spam-compliance-essential-requirements",
+          "fr-qc/best-practices/compliance-legal/gdpr-and-email-marketing-what-you-need-to-know",
+          "fr-qc/best-practices/compliance-legal/global-email-compliance-understanding-anti-spam-laws",
+          "fr-qc/best-practices/compliance-legal/permission-based-email-marketing-why-it-matters",
+          "fr-qc/best-practices/compliance-legal/email-permission-legal-requirements-and-best-practices",
+          "fr-qc/best-practices/compliance-legal/required-email-content-for-legal-compliance",
+          "fr-qc/best-practices/compliance-legal/why-you-should-never-sell-your-email-list"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Strat\u00e9gies de pro",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "fr-qc/best-practices/advanced-strategies"
+        },
+        "items": [
+          "fr-qc/best-practices/advanced-strategies/email-content-strategy-planning-successful-campaigns",
+          "fr-qc/best-practices/advanced-strategies/email-sender-reputation-how-to-build-and-maintain",
+          "fr-qc/best-practices/advanced-strategies/sending-email-campaigns-tips-and-recommendations",
+          "fr-qc/best-practices/advanced-strategies/how-to-change-your-sender-email-address"
+        ]
+      }
+    ],
+    "docs": [
+      {
+        "type": "category",
+        "label": "D\u00e9buter",
+        "collapsed": true,
+        "items": [
+          "docs/first-steps"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Param\u00e8tres de compte",
+        "collapsed": true,
+        "items": [
+          "docs/account-settings/adding-and-editing-users",
+          "docs/account-settings/updating-my-company-profile",
+          "docs/account-settings/setting-your-timezone",
+          "docs/account-settings/multi-factor-authentication-mfa",
+          "docs/account-settings/configuring-your-brand",
+          "docs/account-settings/canceling-your-account",
+          "docs/account-settings/suppression-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Exp\u00e9diteurs",
+        "collapsed": true,
+        "items": [
+          "docs/senders/managing-senders",
+          "docs/senders/authenticating-domains"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Cr\u00e9ation de campagnes",
+        "collapsed": true,
+        "items": [
+          "docs/campaign-creation/creating-campaigns",
+          "docs/campaign-creation/duplicating-campaigns",
+          "docs/campaign-creation/deleting-a-campaign-draft",
+          "docs/campaign-creation/using-the-email-designer",
+          "docs/campaign-creation/creating-mobile-and-desktop-campaign-versions",
+          "docs/campaign-creation/adding-a-video-to-a-campaign",
+          "docs/campaign-creation/adding-pdf-attachments",
+          "docs/campaign-creation/adding-a-calendar-link-to-a-campaign",
+          "docs/campaign-creation/integrating-survey-forms",
+          "docs/campaign-creation/creating-effective-preheaders",
+          "docs/campaign-creation/adding-unsubscribe-links",
+          "docs/campaign-creation/adding-your-physical-address",
+          "docs/campaign-creation/testing-your-campaign",
+          "docs/campaign-creation/creating-ab-tests-campaigns",
+          "docs/campaign-creation/uploading-to-the-file-manager",
+          "docs/campaign-creation/adding-rss-feeds",
+          "docs/campaign-creation/create-utm-tracking-links"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Personnalisation",
+        "collapsed": true,
+        "items": [
+          "docs/personalization/using-dynamic-content",
+          "docs/personalization/adding-merge-tags-to-a-campaign",
+          "docs/personalization/display-conditions",
+          "docs/personalization/using-merge-tags-and-fallbacks",
+          "docs/personalization/adding-a-date-merge-tag"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Assistant IA",
+        "collapsed": true,
+        "items": [
+          "docs/ai/creating-content-with-ai",
+          "docs/ai/creating-subject-lines-with-ai",
+          "docs/ai/creating-email-preheaders-with-ai"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Automatisations",
+        "collapsed": true,
+        "items": [
+          "docs/automations/understanding-email-automation",
+          "docs/automations/creating-an-automated-welcome-email",
+          "docs/automations/creating-an-automation-with-branching-conditions",
+          "docs/automations/creating-a-looping-automation",
+          "docs/automations/tracking-customer-journeys-with-custom-attributes"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Formulaires",
+        "collapsed": true,
+        "items": [
+          "docs/audience-building/subscription-confirmation-email",
+          "docs/audience-building/default-sender-address-and-language",
+          "docs/audience-building/subscriber-preference-center"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Audience",
+        "collapsed": true,
+        "items": [
+          "docs/audience/managing-contact-lists",
+          "docs/audience/importing-contacts-into-your-lists",
+          "docs/audience/updating-contact-information",
+          "docs/audience/removing-a-contact",
+          "docs/audience/adding-attributes-to-your-list",
+          "docs/audience/creating-dynamic-segments",
+          "docs/audience/using-tags-to-track-engagement",
+          "docs/audience/contact-status",
+          "docs/audience/exporting-a-contact-list",
+          "docs/audience/deleting-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Analyses",
+        "collapsed": true,
+        "items": [
+          "docs/analytics/understanding-campaign-reports",
+          "docs/analytics/tracking-campaign-performance",
+          "docs/analytics/email-click-rates",
+          "docs/analytics/open-rates",
+          "docs/analytics/email-bounces",
+          "docs/analytics/tracking-click-rate-activity"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Mod\u00e8les d'email",
+        "collapsed": true,
+        "items": [
+          "docs/email-templates/working-with-smart-templates",
+          "docs/email-templates/saving-campaigns-as-templates",
+          "docs/email-templates/deleting-a-template",
+          "docs/email-templates/importing-your-html-code"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Int\u00e9grations",
+        "collapsed": true,
+        "items": [
+          "docs/integrations/connecting-cakemail-with-zapier"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Partenaires",
+        "collapsed": true,
+        "items": [
+          "docs/partners/customizing-your-default-reseller-domain",
+          "docs/partners/managing-client-features",
+          "docs/partners/client-template-sharing",
+          "docs/partners/system-email-customization"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "D\u00e9pannage de livraison",
+        "collapsed": true,
+        "items": [
+          "docs/delivery-troubleshooting/email-deliverability",
+          "docs/delivery-troubleshooting/role-based-emails",
+          "docs/delivery-troubleshooting/missing-emails",
+          "docs/delivery-troubleshooting/under-review-warnings",
+          "docs/delivery-troubleshooting/spam-and-promotions-tab",
+          "docs/delivery-troubleshooting/email-opens",
+          "docs/delivery-troubleshooting/image-display-issues",
+          "docs/delivery-troubleshooting/account-suspensions",
+          "docs/delivery-troubleshooting/delivery-delays",
+          "docs/delivery-troubleshooting/domain-blacklisting",
+          "docs/delivery-troubleshooting/feedback-loops",
+          "docs/delivery-troubleshooting/email-bounces"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Facturation",
+        "collapsed": true,
+        "items": [
+          "docs/billing/choosing-your-plan",
+          "docs/billing/protecting-your-information"
+        ]
+      }
+    ],
+    "resources-support": [
+      {
+        "type": "category",
+        "label": "Support et Ressources",
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Contact Support"
+          },
+          {
+            "type": "link",
+            "label": "Status Page"
+          },
+          {
+            "type": "link",
+            "label": "Product Release Notes"
+          }
+        ]
+      }
+    ]
+  },
+  "fr": {
+    "best-practices": [
+      {
+        "type": "doc",
+        "label": "Aper\u00e7u des bonnes pratiques",
+        "id": "best-practices"
+      },
+      {
+        "type": "category",
+        "label": "D\u00e9buter",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/getting-started"
+        },
+        "items": [
+          "best-practices/getting-started/email-marketing-fundamentals-a-beginners-guide",
+          "best-practices/getting-started/benefits-of-using-an-email-marketing-provider",
+          "best-practices/getting-started/creating-your-first-email-template-a-beginners-guide",
+          "best-practices/getting-started/glossary-of-email-marketing-terms"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Construction de listes",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/list-building"
+        },
+        "items": [
+          "best-practices/list-building/building-a-quality-email-list-best-practices",
+          "best-practices/list-building/how-to-build-your-email-list-the",
+          "best-practices/list-building/email-list-growth-strategies-to-attract-new-subscribers",
+          "best-practices/list-building/list-hygiene-maintaining-a-healthy-email-database",
+          "best-practices/list-building/double-opt-in-how-to-build-higher-quality-lists",
+          "best-practices/list-building/why-purchased-email-lists-hurt-your-business"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Design d'email",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/email-design"
+        },
+        "items": [
+          "best-practices/email-design/email-design-checklist",
+          "best-practices/email-design/email-design-balancing-text-and-images-for-results",
+          "best-practices/email-design/why-image-only-emails-hurt-deliverability-and-engagement"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "D\u00e9livrabilit\u00e9",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/deliverability"
+        },
+        "items": [
+          "best-practices/deliverability/email-deliverability-optimization-complete-guide",
+          "best-practices/deliverability/choosing-the-right-sender-email-address",
+          "best-practices/deliverability/avoiding-noreply-email-addresses",
+          "best-practices/deliverability/why-you-should-use-your-own-domain-for-sending",
+          "best-practices/deliverability/how-to-avoid-spam-traps-and-protect-your-reputation",
+          "best-practices/deliverability/how-to-reduce-spam-complaints-prevention-strategies",
+          "best-practices/deliverability/dedicated-ip-addresses-when-and-why-you-need-one"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Optimisation de l'engagement",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/engagement-optimization"
+        },
+        "items": [
+          "best-practices/engagement-optimization/email-subject-line-best-practices",
+          "best-practices/engagement-optimization/how-to-improve-email-open-rates-expert-tips",
+          "best-practices/engagement-optimization/how-to-increase-email-engagement-proven-strategies",
+          "best-practices/engagement-optimization/optimal-send-times-and-frequency-maximize-engagement",
+          "best-practices/engagement-optimization/re-engagement-campaigns-win-back-inactive-subscribers",
+          "best-practices/engagement-optimization/email-marketing-benchmarks-what-are-good-open-rates"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Conformit\u00e9 et aspects l\u00e9gaux",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/compliance-legal"
+        },
+        "items": [
+          "best-practices/compliance-legal/global-email-compliance-understanding-anti-spam-laws",
+          "best-practices/compliance-legal/can-spam-compliance-essential-requirements",
+          "best-practices/compliance-legal/casl-compliance-canadas-anti-spam-law-explained",
+          "best-practices/compliance-legal/gdpr-and-email-marketing-what-you-need-to-know",
+          "best-practices/compliance-legal/required-email-content-for-legal-compliance",
+          "best-practices/compliance-legal/permission-based-email-marketing-why-it-matters",
+          "best-practices/compliance-legal/email-permission-legal-requirements-and-best-practices",
+          "best-practices/compliance-legal/why-you-should-never-sell-your-email-list"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Strat\u00e9gies avanc\u00e9es",
+        "collapsed": true,
+        "link": {
+          "type": "doc",
+          "id": "best-practices/advanced-strategies"
+        },
+        "items": [
+          "best-practices/advanced-strategies/email-content-strategy-planning-successful-campaigns",
+          "best-practices/advanced-strategies/sending-email-campaigns-tips-and-recommendations",
+          "best-practices/advanced-strategies/email-sender-reputation-how-to-build-and-maintain",
+          "best-practices/advanced-strategies/how-to-change-your-sender-email-address"
+        ]
+      }
+    ],
+    "claude": [
+      {
+        "type": "category",
+        "label": "Cakemail pour Claude",
+        "collapsed": false,
+        "items": [
+          "claude/overview",
+          "claude/beta",
+          "claude/installation"
+        ]
+      }
+    ],
+    "docs": [
+      {
+        "type": "category",
+        "label": "D\u00e9buter",
+        "collapsed": true,
+        "items": [
+          "docs/first-steps"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Param\u00e8tres de compte",
+        "collapsed": true,
+        "items": [
+          "docs/account-settings/adding-and-editing-users",
+          "docs/account-settings/updating-my-company-profile",
+          "docs/account-settings/setting-your-timezone",
+          "docs/account-settings/multi-factor-authentication-mfa",
+          "docs/account-settings/configuring-your-brand",
+          "docs/account-settings/canceling-your-account",
+          "docs/account-settings/suppression-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Exp\u00e9diteurs",
+        "collapsed": true,
+        "items": [
+          "docs/senders/managing-senders",
+          "docs/senders/authenticating-domains"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Cr\u00e9ation de campagnes",
+        "collapsed": true,
+        "items": [
+          "docs/campaign-creation/creating-campaigns",
+          "docs/campaign-creation/duplicating-campaigns",
+          "docs/campaign-creation/deleting-a-campaign-draft",
+          "docs/campaign-creation/using-the-email-designer",
+          "docs/campaign-creation/creating-mobile-and-desktop-campaign-versions",
+          "docs/campaign-creation/adding-a-video-to-a-campaign",
+          "docs/campaign-creation/adding-pdf-attachments",
+          "docs/campaign-creation/adding-a-calendar-link-to-a-campaign",
+          "docs/campaign-creation/integrating-survey-forms",
+          "docs/campaign-creation/creating-effective-preheaders",
+          "docs/campaign-creation/adding-unsubscribe-links",
+          "docs/campaign-creation/adding-your-physical-address",
+          "docs/campaign-creation/testing-your-campaign",
+          "docs/campaign-creation/creating-ab-tests-campaigns",
+          "docs/campaign-creation/uploading-to-the-file-manager",
+          "docs/campaign-creation/adding-rss-feeds",
+          "docs/campaign-creation/create-utm-tracking-links"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Personnalisation",
+        "collapsed": true,
+        "items": [
+          "docs/personalization/using-dynamic-content",
+          "docs/personalization/adding-merge-tags-to-a-campaign",
+          "docs/personalization/display-conditions",
+          "docs/personalization/using-merge-tags-and-fallbacks",
+          "docs/personalization/adding-a-date-merge-tag"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Assistant IA",
+        "collapsed": true,
+        "items": [
+          "docs/ai/creating-content-with-ai",
+          "docs/ai/creating-email-preheaders-with-ai"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Automatisations",
+        "collapsed": true,
+        "items": [
+          "docs/automations/understanding-email-automation",
+          "docs/automations/creating-an-automated-welcome-email",
+          "docs/automations/creating-an-automation-with-branching-conditions",
+          "docs/automations/creating-a-looping-automation",
+          "docs/automations/tracking-customer-journeys-with-custom-attributes"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Formulaires",
+        "collapsed": true,
+        "items": [
+          "docs/audience-building/subscription-confirmation-email",
+          "docs/audience-building/default-sender-address-and-language",
+          "docs/audience-building/subscriber-preference-center"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Audience",
+        "collapsed": true,
+        "items": [
+          "docs/audience/managing-contact-lists",
+          "docs/audience/importing-contacts-into-your-lists",
+          "docs/audience/updating-contact-information",
+          "docs/audience/removing-a-contact",
+          "docs/audience/adding-attributes-to-your-list",
+          "docs/audience/creating-dynamic-segments",
+          "docs/audience/using-tags-to-track-engagement",
+          "docs/audience/contact-status",
+          "docs/audience/exporting-a-contact-list",
+          "docs/audience/deleting-lists"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Analyses",
+        "collapsed": true,
+        "items": [
+          "docs/analytics/understanding-campaign-reports",
+          "docs/analytics/tracking-campaign-performance",
+          "docs/analytics/email-click-rates",
+          "docs/analytics/open-rates",
+          "docs/analytics/email-bounces",
+          "docs/analytics/tracking-click-rate-activity"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Mod\u00e8les d'email",
+        "collapsed": true,
+        "items": [
+          "docs/email-templates/working-with-smart-templates",
+          "docs/email-templates/saving-campaigns-as-templates",
+          "docs/email-templates/deleting-a-template",
+          "docs/email-templates/importing-your-html-code"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Int\u00e9grations",
+        "collapsed": true,
+        "items": [
+          "docs/integrations/connecting-cakemail-with-zapier"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Partenaires",
+        "collapsed": true,
+        "items": [
+          "docs/partners/customizing-your-default-reseller-domain",
+          "docs/partners/managing-client-features",
+          "docs/partners/client-template-sharing",
+          "docs/partners/system-email-customization"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "D\u00e9pannage de livraison",
+        "collapsed": true,
+        "items": [
+          "docs/delivery-troubleshooting/email-deliverability",
+          "docs/delivery-troubleshooting/role-based-emails",
+          "docs/delivery-troubleshooting/missing-emails",
+          "docs/delivery-troubleshooting/under-review-warnings",
+          "docs/delivery-troubleshooting/spam-and-promotions-tab",
+          "docs/delivery-troubleshooting/email-opens",
+          "docs/delivery-troubleshooting/image-display-issues",
+          "docs/delivery-troubleshooting/account-suspensions",
+          "docs/delivery-troubleshooting/delivery-delays",
+          "docs/delivery-troubleshooting/domain-blacklisting",
+          "docs/delivery-troubleshooting/feedback-loops",
+          "docs/delivery-troubleshooting/email-bounces"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Facturation",
+        "collapsed": true,
+        "items": [
+          "docs/billing/choosing-your-plan",
+          "docs/billing/protecting-your-information"
+        ]
+      }
+    ],
+    "resources-support": [
+      {
+        "type": "category",
+        "label": "Support et Ressources",
+        "collapsed": false,
+        "items": [
+          {
+            "type": "link",
+            "label": "Contact Support"
+          },
+          {
+            "type": "link",
+            "label": "Status Page"
+          },
+          {
+            "type": "link",
+            "label": "Product Release Notes"
+          }
+        ]
+      }
+    ]
+  }
+}
