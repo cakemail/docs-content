@@ -1,0 +1,28 @@
+---
+title: "Next-gen API v1.12"
+---
+
+This release brings you some new major features: **tags**, **campaign log export** and **calendar attachments**.
+
+### Tags
+
+[Tags](ref:tags) give you even more freedom to manage your contacts.
+
+You can tag them [individually](ref:tagcontact) or [collectively](ref:tagmultiplecontacts) using [queries](ref:working-with-segment-queries).
+
+### Campaign Log Export
+
+Now you can [create a CSV export](ref:campaignlogexportcreate) of your campaign logs directly via the API.
+
+### Calendar Attachments for Transactional Emails
+
+When sending out event invitations with [transactional emails](ref:sendemail) you can now add iCal attachments to improve your recipient's experience.
+
+## More Features and Bugfixes
+
+- added an endpoint to [delete your default logo](ref:deletedefaultlogo)
+- added support for cursor pagination on [campaign logs](ref:getcampaignlogs)
+- added a **subscription_type** field to [list logs](ref:getlistlogs) events so you can also identify who's resubscribing to your list
+- added new [webhook](ref:createwebhook) events for [senders](ref:listsenders)
+- fixed a pagination issue on [contact listing](ref:listcontactsoflist) causing a contact to be skipped
+- fixed a security issue by HTML-escaping all variables used on [system emails](ref:showsystememails).

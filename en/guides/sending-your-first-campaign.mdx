@@ -1,0 +1,108 @@
+---
+title: "Sending your first campaign"
+---
+
+This page will help you get started with the Campaign API
+
+In this guide, you will learn the basics of managing your campaigns in Cakemail.
+
+## Create your first campaign
+
+Before you can send a campaign, you first need to set it up with your content and options. To do this, you can call the **Create a campaign** endpoint. Review the full API reference for a list of all the parameters you can pass.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/campaigns \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"audience":{"list_id":[list ID]},"tracking":{"opens":true,"clicks_html":true,"clicks_text":true},"sender":{"id":"[sender ID]"},"content":{"subject":"[subject]","html":"[HTML content]","text":"text content","encoding":"utf-8"},"name":"[campaign name]"}'
+```
+
+This will return you a campaign ID. Your first campaign is now ready to test and send.
+
+## Render a preview
+
+Before you send your campaign, make sure to test it. The first step in testing it is to render a preview of the campaign by calling the **Render a campaign** endpoint.
+
+```shell
+curl --request GET \
+  --url https://api.cakemail.dev/campaigns/[campaign ID]/render \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+This will return you an object with the render of both the HTML and the text versions.
+
+## Send a test email
+
+Now that you have confirmed the render of the campaign looks good, you will want to check how it looks in an actual email client. Keep in mind that email clients don't all behave the same, so testing in more than one email client is always a good idea to ensure your campaign looks great across all of them.
+
+To send a test email, simply call the **Send a test email** endpoint along with an email address.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/campaigns/[campaign ID]/send-test \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"test_email":{"email":[test email address]},"type":"merged"}'
+```
+
+You should now receive shortly an email in your inbox containing both the HTML and the text versions of the campaign. If you want to test them separately, you can specify the parameter **type** with the value **separated**.
+
+## Schedule your campaign
+
+You are now ready to send your campaign. In this case, we will schedule it for later. To schedule your campaign, you can call the **Schedule a campaign** endpoint along with a date (in the form of a UNIX timestamp).
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/campaigns/[campaign ID]/schedule \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"date":[your scheduled date]}'
+```
+
+Your campaign will be sent to your selected audience on that date. If you want to send your campaign right now instead of scheduling it in the future, you can simply omit the **date** parameter.
+
+## Review your campaign report
+
+After your campaign has been sent, you will most likely want to know how it performed. For that, you can call our **Analytic API** with the **Show campaign report** endpoint.
+
+```shell
+curl --request GET \
+  --url https://api.cakemail.dev/reports/campaigns/[campaign ID] \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+This will return a handful of metrics from the open and click rate to the bounce and spam rate. Reviewing these metrics over time will allow you to create campaigns that perform better.
+
+## Get more details
+
+In the case, you want more details regarding one or more metrics of your campaign, you can retrieve the complete logs of the campaign by calling the **Show campaign logs** endpoint.
+
+```shell
+curl --request GET \
+  --url 'https://api.cakemail.dev/logs/campaigns/[campaign ID]?page=1&per_page=50&with_count=false' \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+This will return your the logs of your campaign. You can review the full API reference for more details about filtering and sorting options.
+
+## Display all your campaigns
+
+As you send more campaigns, you will want to display the campaigns that are in your account. You can retrieve the list of campaigns in your account by calling the **Show all campaigns** endpoint.
+
+```shell
+curl --request GET \
+  --url 'https://api.cakemail.dev/campaigns?page=1&per_page=50&with_count=false' \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+This will return you a list of your campaigns.
+
+You can explore the full API reference for more advanced features in the Campaign API.

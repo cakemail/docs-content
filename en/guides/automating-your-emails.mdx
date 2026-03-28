@@ -1,0 +1,274 @@
+---
+title: "Automating your emails"
+---
+
+This page will help you get started with the Automation API
+
+:::caution
+This documentation does not reflect the current state of the Automation feature in Cakemail.
+An updated documentation will be available soon.
+:::
+
+In this guide, you will learn the basics of working with the Automation API in Cakemail.
+
+## How it works
+
+In the Automation API, we have 2 concepts: workflows and actions.
+
+### Workflows
+
+A workflow consists of a list of actions that will be triggered over time based on certain conditions.
+
+### Actions
+
+An action is an entity that performs an action, like sending an email, based on conditions. In the first release of the Automation API, Cakemail only supports the action of sending an email and the conditions of a parent action to be sent, opened or clicked.
+
+Here is an example of a series of emails to be sent when someone subscribes to a contact list.
+
+![Automation Example](/image.png)
+
+## Create your first workflow
+
+The first step in setting a new automation is to create a Workflow. To create your first workflow, you will call the Create a workflow endpoint along with basic information like a name, a goal and a description as well as define your target audience.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/workflows \
+  --header 'Accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'Content-Type: application/json' \
+  --data '{"audience":{"list_id":[list ID]},"name":"[name of the workflow]","goal":"[goal of the workflow]","trigger":"subscribed"}'
+```
+
+```python
+from cakemail.models import Workflow, WorkflowAudience
+
+my_workflow = api.workflow.create(
+    workflow=Workflow(
+        name='<workflow name>',
+        goal='<workflow goal>',
+        trigger='subscribed',
+        audience=WorkflowAudience(list_id=my_list.id)
+    )
+)
+```
+
+```php
+<?php
+
+$myWorkflow = $api->workflow->create([
+    'workflow' => new \Cakemail\Lib\Model\Workflow([
+        'name' => '<workflow name>',
+        'goal' => '<workflow goal>',
+        'trigger' => 'subscribed',
+        'audience' => new \Cakemail\Lib\Model\WorkflowAudience([
+            'list_id' => $myList['id']
+        ])
+    ])
+]);
+```
+
+This call will return you a workflow object. You can now create actions in your workflow.
+
+## Create the actions in your workflow
+
+The first action of the workflow is special, it is the only action that doesn't have a parent. It will be triggered by the workflow itself. To create your first action, you will call the Create an action along with all the information required by an action.
+
+```shell
+curl --request POST \
+ --url https://api.cakemail.dev/workflows/[workflow ID]/actions \
+ --header 'Accept: application/json' \
+ --header 'authorization: Bearer [access token]' \
+ --header 'Content-Type: application/json' \
+ --data '{"email_settings":{"sender":{"id":"[contact list ID]"},"tracking":{"opens":true,"clicks_html":true,"clicks_text":true},"content":{"subject":"[subject]","html":"[HTML content]","type":"html","encoding":"utf-8"}},"name":"[name of the action]","condition":"none","delay":0,"type":"email"}'
+```
+
+```python
+from cakemail.models import Action, ActionEmailSettings, ActionTracking, Sender, ActionContent
+
+my_first_action = api.action.create(
+    Action(
+        name='<action name>',
+        condition='none,
+        delay=0,
+        type='email',
+        email_settings=ActionEmailSettings(
+            tracking=ActionTracking(
+                opens=true,
+                clicks_html=true,
+                clicks_text=true
+            ),
+            sender=Sender(
+                id=my_sender.id
+            ),
+            content=ActionContent(
+                subject='<subject>',
+                html='<HTML content>',
+                type='html',
+                encoding='utf-8'
+            )
+        )
+    )
+)
+```
+
+```php
+<?php
+
+$myFirstAction = $api->action->create([
+    'action' => new \Cakemail\Lib\Model\Action([
+        'name' => '<campaign name>',
+        'condition' => 'none',
+        'delay' => 0,
+        'type' => 'email',
+        'email_settings' => new \Cakemail\Libs\Model\ActionEmailSettings([
+            'tracking' => new \Cakemail\Lib\Model\ActionTracking([
+                'opens' => true,
+                'clicks_html' => true,
+                'clicks_text' => true
+            ]),
+            'sender' => new \Cakemail\Lib\Model\Sender([
+                'id' => $mySender['id']
+            ]),
+            'content' => new \Cakemail\Lib\Model\ActionContent([
+                'subject' => '<subject>',
+                'html' => '<HTML content>',
+								'type' => 'html',
+                'encoding' => 'utf-8'
+            ])
+        ])
+    ])
+]);
+```
+
+This call will return you an action object. Now that you have your first action, you can start building your workflow by adding a second action that will take the ID of the first action as its parent_id parameter.
+
+```shell
+curl --request POST \
+ --url https://api.cakemail.dev/workflows/[workflow ID]/actions \
+ --header 'Accept: application/json' \
+ --header 'authorization: Bearer [access token]' \
+ --header 'Content-Type: application/json' \
+ --data '{"email_settings":{"sender":{"id":"[contact list ID]"},"tracking":{"opens":true,"clicks_html":true,"clicks_text":true},"content":{"subject":"[subject]","html":"[HTML content]","type":"html","encoding":"utf-8"}},"name":"[name of the action]","parent_id":"[previous action ID]",condition":"none","delay":259200,"type":"email"}'
+```
+
+```python
+from cakemail.models import Action, ActionEmailSettings, ActionTracking, Sender, ActionContent
+
+my_second_action = api.action.create(
+    Action(
+        name='<action name>',
+        parent_id=my_first_action.id,
+        condition='none,
+        delay=259200,
+        type='email',
+        email_settings=ActionEmailSettings(
+            tracking=ActionTracking(
+                opens=true,
+                clicks_html=true,
+                clicks_text=true
+            ),
+            sender=Sender(
+                id=my_sender.id
+            ),
+            content=ActionContent(
+                subject='<subject>',
+                html='<HTML content>',
+                type='html',
+                encoding='utf-8'
+            )
+        )
+    )
+)
+```
+
+```php
+<?php
+
+$mySecondAction = $api->action->create([
+    'action' => new \Cakemail\Lib\Model\Action([
+        'name' => '<campaign name>',
+        'parent_id' => $myFirstAction['id'],
+        'condition' => 'none',
+        'delay' => 259200,
+        'type' => 'email',
+        'email_settings' => new \Cakemail\Libs\Model\ActionEmailSettings([
+            'tracking' => new \Cakemail\Lib\Model\ActionTracking([
+                'opens' => true,
+                'clicks_html' => true,
+                'clicks_text' => true
+            ]),
+            'sender' => new \Cakemail\Lib\Model\Sender([
+                'id' => $mySender['id']
+            ]),
+            'content' => new \Cakemail\Lib\Model\ActionContent([
+                'subject' => '<subject>',
+                'html' => '<HTML content>',
+								'type' => 'html',
+                'encoding' => 'utf-8'
+            ])
+        ])
+    ])
+]);
+```
+
+You now have a workflow that is ready to be used.
+
+## Activate your workflow
+
+When a workflow is created, it is deactivated by default. That's to leave you the time to add all the actions before it gets triggered for the first time. To activate your workflow, you will call the Activate a workflow endpoint along with the ID of the workflow that was returned earlier in the workflow object.
+
+```shell
+curl --request POST \
+ --url https://api.cakemail.dev/workflows/[workflow ID]/activate \
+ --header 'Accept: application/json'
+--header 'authorization: Bearer [access token]' \
+Your workflow is now ready to start sending emails. You can test it by subscribing to the contact list you defined in the audience above.
+```
+
+```python
+actions = api.action.list(
+    workflow_id=workflow.id
+)
+```
+
+```php
+<?php
+
+$api->workflow->activate([
+    'workflow_id' => $myWorkflow['id']
+]);
+```
+
+Your workflow is now ready to start sending emails. You can test it by subscribing to the contact list you defined in the audience above.
+
+## List the actions of your workflow
+
+At some point, you might want to go back to look at your workflow. To do so, you will call the **List actions** endpoint along with a workflow **ID**.
+
+```shell
+curl --request GET \
+  --url 'https://api.cakemail.dev/workflows/[workflow ID]/actions?page=1&per_page=50&with_count=false' \
+  --header 'Accept: application/json'
+  --header 'authorization: Bearer [access token]' \
+```
+
+```python
+actions = api.action.list(
+    workflow_id=workflow.id
+)
+```
+
+```php
+<?php
+
+$actions = $api->action->list([
+    'workflow_id' => $myWorkflow['id']
+]);
+```
+
+This will return you a list of actions that are part of your workflows.
+
+You can explore the full API reference for more advanced features in the Automation API.
+
+One last thing to know. If you want to modify a workflow or its actions, you first have to deactivate your workflow.

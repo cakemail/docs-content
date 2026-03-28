@@ -1,0 +1,270 @@
+---
+source: "https://support.cakemail.com/hc/fr-ca/sections/best-practices-deliverability"
+---
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "zudoku/ui/Card"
+
+# Délivrabilité : comment faire pour que tes courriels se rendent
+
+T'as-tu déjà envoyé un courriel super important pis après t'as su que personne l'avait reçu? Ben c'est ça qu'on veut éviter. Faut que tes courriels se rendent dans la boîte de réception, pas dans les pourriels. Voici comment faire pour que ça marche.
+
+## 📚 Articles dans cette section
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
+  <a href="/fr-qc/best-practices/deliverability/email-deliverability-optimization-complete-guide" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>📖 Guide complet pour optimiser la délivrabilité</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Toutes les stratégies pour t'assurer que tes courriels arrivent à bon port. On parle de réputation, d'authentification, pis de comment écrire pour pas avoir l'air louche.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/deliverability/choosing-the-right-sender-email-address" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🎯 Choisir la bonne adresse d'expéditeur</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Comment choisir une adresse qui inspire confiance pis qui fait pas peur au monde. C'est important en titi pour ta réputation.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/deliverability/avoiding-noreply-email-addresses" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>⚠️ Évite les adresses "noreply@" comme la peste</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Pourquoi c'est poche d'utiliser des adresses qui disent "réponds-moi pas". Ça tue l'engagement pis ça nuit à ta délivrabilité.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/deliverability/why-you-should-use-your-own-domain-for-sending" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🏠 Pourquoi utiliser ton propre domaine pour envoyer</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Utiliser Gmail ou Hotmail pour ton business? Pas fort. On t'explique pourquoi avoir ton propre domaine, c'est la base.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/deliverability/how-to-avoid-spam-traps-and-protect-your-reputation" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🕳️ Comment éviter les pièges à spam</CardTitle>
+        <CardDescription style={{ fontSize: '0.9em', fontWeight: '600' }}>Protéger ta réputation</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Les pièges à spam, c'est comme des trous dans la rue. Tu veux pas tomber dedans. Voici comment les spotter pis les éviter.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/deliverability/how-to-reduce-spam-complaints-prevention-strategies" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🛡️ Comment réduire les plaintes de spam</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Personne aime se faire traiter de spammeur. Voici comment éviter que ton monde te flag comme du pourriel.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/deliverability/dedicated-ip-addresses-when-and-why-you-need-one" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>💻 IP dédiée : est-ce que t'en as besoin ?</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>C'est-tu le temps d'avoir ta propre adresse IP? On regarde ça ensemble pour voir si ça vaut la peine pour ton volume.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+</div>
+
+## 🎯 Les bases de la délivrabilité
+
+### 1. **La fondation technique**
+- Authentification SPF, DKIM, DMARC (on va t'expliquer c'est quoi)
+- Configuration DNS aux petits oignons
+- Réchauffement de ton IP (si t'en as une dédiée)
+- Bâtir ta réputation de domaine
+
+### 2. **Une liste clean**
+- Juste du monde qui veut vraiment recevoir tes affaires
+- Nettoyer ta liste régulièrement
+- Gérer les bounces comme un pro
+- Checker comment le monde réagit
+
+### 3. **Du contenu qui pogne**
+- Balance entre texte et images (60/40)
+- Des sujets qui donnent le goût d'ouvrir
+- Éviter les mots qui sentent le spam
+- Que ça soit beau sur mobile
+
+### 4. **Comment envoyer**
+- Envoyer de façon régulière
+- Pas trop souvent, mais assez
+- Segmenter ta liste intelligemment
+- Adapter selon l'engagement
+
+## 📊 Les métriques à surveiller
+
+Garde un œil sur ces chiffres :
+- **Taux d'inbox** : combien arrivent dans la boîte principale
+- **Taux de spam** : combien finissent dans les pourriels
+- **Taux de rebond** : vise moins de 2%
+- **Taux de plainte** : reste en bas de 0,1%
+- **Score d'expéditeur** : 80+ c'est dans le vert
+
+## 💡 Les meilleures pratiques
+
+### Configure ton authentification
+✅ Configure ton SPF (ça dit qui peut envoyer pour toi)  
+✅ Active le DKIM (c'est comme une signature)  
+✅ Configure DMARC (ça protège ton domaine)  
+✅ Check ton reverse DNS  
+
+### Gérer ta réputation
+- Commence tranquille avec une nouvelle IP
+- Check les blacklists régulièrement
+- Garde un volume d'envoi stable
+- Surveille tes scores d'expéditeur
+
+### Optimiser ton contenu
+- Évite les mots louches (GRATUIT!!! 💰💰💰)
+- 60% texte, 40% images
+- Des sujets clairs, pas clickbait
+- Toujours un lien pour se désabonner
+
+## 🚨 Les red flags
+
+Si tu vois ça, il y a un problème :
+- Tes taux d'ouverture chutent
+- Plus de bounces que d'habitude
+- Le monde te flag comme spam
+- Tu te retrouves sur une blacklist
+- Les ISP commencent à te bloquer
+
+## 🛠️ Dépannage
+
+### Personne n'ouvre tes courriels ?
+1. Check ton authentification
+2. Vérifie ta réputation
+3. Revois tes lignes de sujet
+4. Essaye d'autres heures d'envoi
+
+### Trop de bounces ?
+1. Nettoie ta liste tout de suite
+2. Revois comment tu collectes les courriels
+3. Check pour des typos dans les adresses
+4. Active le double opt-in
+
+### Tu finis dans les pourriels ?
+1. Regarde ton contenu pour des mots louches
+2. Vérifie ton authentification
+3. Check tes taux d'engagement
+4. Essaye une autre adresse d'envoi
+
+## 🔧 Ce dont t'as besoin techniquement
+
+### L'authentification, c'est pas optionnel
+- **SPF** : Dit qui peut envoyer avec ton domaine
+- **DKIM** : Une signature numérique pour tes courriels
+- **DMARC** : La police de ton domaine
+
+### Infrastructure nécessaire
+- Une IP stable pour envoyer
+- Des sous-domaines bien configurés
+- Un historique d'IP clean
+- Des outils pour monitorer
+
+## Prochaines étapes
+
+Une fois que ta délivrabilité est solide, explore ces catégories :
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+  <a href="/fr-qc/best-practices/engagement-optimization" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>📈 Optimisation de l'engagement</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Améliorer tes taux d'ouverture et comparer tes résultats.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/list-building" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>📋 Bâtir ta liste</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Garder ta liste en santé pour une meilleure délivrabilité.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/advanced-strategies" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>🚀 Stratégies avancées</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Techniques avancées pour devenir un pro.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+</div>
+
+## Catégories connexes
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+  <a href="/fr-qc/best-practices/list-building" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>📋 Bâtir ta liste</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Une bonne liste = meilleure délivrabilité.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/compliance-legal" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>⚖️ Rester légal</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>La loi C-28, c'est sérieux pour ta délivrabilité.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/fr-qc/best-practices/advanced-strategies" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>🚀 Stratégies avancées</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Pour devenir un pro de la délivrabilité.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+</div>

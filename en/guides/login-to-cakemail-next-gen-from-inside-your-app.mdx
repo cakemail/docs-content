@@ -1,0 +1,21 @@
+---
+title: "Login to Cakemail Next-gen from inside your app"
+---
+
+As a Cakemail partner you might want to offer a **Login to Cakemail** or **Login to Email Marketing App** button inside your application or control panel, allowing your clients direct access to their Cakemail accounts, provided that you have control over their email addresses and passwords.
+
+You can use this as a starting point:
+
+```html
+<form action="https://app.cakemail.com/api/login" method="POST" target="_blank">
+    <input type="hidden" name="email" value="test@example.com" />
+    <input type="hidden" name="password" value="mypassword" />
+    <input type="submit" value="login" />
+</form>
+```
+
+And then:
+
+1. Replace **app.cakemail.com** with your **partner URL**;
+2. Replace the **email** and **password** values with the clients' credentials from your database;
+3. Customize the login button with CSS to match your app styles.

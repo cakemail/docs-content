@@ -1,0 +1,28 @@
+---
+title: "Next-gen API v1.5"
+---
+
+The SMTP endpoint is now simpler to use!
+
+The _x-sender-id_ header is no longer required; when omitted, the _envelope mail from_ will be used to select the confirmed sender.  Confirm your sender in advance, and you are good to go!
+
+For more details, see the [updated reference article](https://cakemail.dev/reference#smtp-relay).
+
+## Branded System Emails
+
+Emails for various confirmation needs (sub-account confirmation, user confirmation, sender confirmation, and reset password) can now be customized to your brand colours.  Prepare a template, attach it (with a sender) to one of the four customizable system emails.
+
+## Template Tags
+
+You can now add arbitrary tags to your templates for easy classification and filtering.
+
+## More features and bugfixes
+
+- Filter templates by name
+- Enumerate the tracked links of your automation Actions
+- HTML render endpoint for Campaign Blueprints
+- Transactional emails are blocked if your account reaches its limits, avoiding surcharges
+- All new lists are double opt-in
+- Fixed a bug where a Form creation would fail with a generic error if the list policy is not accepted. Now, the API returns a clear error.
+- Allow sending the double opt-in/welcome email when adding a contact via the API.  Useful if you collect emails instead of using the Forms.
+- The return parameter `thumbnail` is now deprecated and will be removed in a future release. The return parameter `thumbnail` has been replaced by `thumbnail_url`.

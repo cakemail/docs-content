@@ -1,0 +1,36 @@
+---
+title: "Classic API compatibility"
+description: "If you are currently using the Classic API and wish to migrate to Next-gen, please first consult the following table in order to properly assess the impact of your migration."
+---
+
+If you are currently using the Classic API and wish to migrate to Next-gen, please first consult the following table in order to properly assess the impact of your migration.
+
+| Next-gen v1.0                    | Classic                                              | Compatibility              |
+| -------------------------------- | ---------------------------------------------------- | -------------------------- |
+| Campaigns                        | Mailing                                              | Compatible                 |
+| N/A                              | Mailing with type 'recurring'                        | Only available in Classic  |
+| N/A                              | Mailing with type 'absplit'                          | Only available in Classic  |
+| List                             | List                                                 | Compatible                 |
+| Contact                          | List / Record                                        | Compatible                 |
+| Custom Attribute                 | List / Fields                                        | Compatible                 |
+| Segment                          | List / Sublist                                       | Compatible                 |
+| Suppressed Email                 | SuppressionList                                      | Compatible                 |
+| Transactional Email              | Relay                                                | Compatible                 |
+| Transactional Email through SMTP | N/A                                                  | Only available in Next-Gen |
+| Log                              | Mailing / Log<br />List / Log<br />Relay / Log<br /> | <br />Compatible           |
+| Report                           | Mailing / Log<br />List / Log<br />Relay / Log<br /> | <br />Compatible           |
+| Account                          | Client                                               | Compatible                 |
+| Sub-Account                      | Client                                               | Compatible                 |
+| User                             | User                                                 | Compatible                 |
+| Form                             | N/A                                                  | Only available in Next-Gen |
+| Domain                           | Client                                               | Compatible                 |
+| Logo                             | N/A                                                  | Only available in Next-Gen |
+| Sender                           | N/A                                                  | Only available in Next-Gen |
+| N/A                              | TemplateV2                                           | Only available in Classic  |
+| N/A                              | Trigger                                              | Only available in Classic  |
+| N/A                              | Permission                                           | Only available in Classic  |
+| N/A                              | Campaign                                             | Only available in Classic  |
+
+Cakemail Next-gen also provides a way to add a **Login to Cakemail** or **Login to Email Marketing** from inside your app or control panel.
+
+Its implementation differs from that of Cakemail Classic, and instructions can be found in the [Login to Next-gen from inside your app](https://docs.cakemail.com/api/guides/partners-login-to-api-from-app) guide.

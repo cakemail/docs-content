@@ -1,0 +1,78 @@
+---
+source: >-
+  https://support.cakemail.com/hc/en-us/articles/15719701730587-Generating-Subject-lines-with-AI
+---
+
+# Création de lignes d'objet avec l'IA
+
+## Description
+
+Dans le marketing par courriel, des lignes d'objet convaincantes sont vitales pour capturer l'attention des destinataires et augmenter les taux d'ouverture. Vous pouvez utiliser une fonctionnalité puissante qui automatise la création de lignes d'objet basées sur le contenu d'un courriel avec notre application. Cet article vous guidera à travers l'utilisation de la fonction de ligne d'objet générée par l'IA, explorant ses avantages et comment elle peut améliorer vos campagnes de courriel.
+
+## Pourquoi c'est important
+
+### Pertinence accrue
+Les lignes d'objet générées par l'IA vous permettent d'aligner la ligne d'objet avec le contenu du courriel, la rendant plus pertinente aux intérêts du destinataire.
+
+### Taux d'ouverture améliorés
+En adaptant les lignes d'objet basées sur le contenu du courriel, vous pouvez attirer l'attention des destinataires et les inciter à ouvrir vos courriels.
+
+### Économies de temps
+Avec la génération automatisée de lignes d'objet, vous économisez du temps qui serait autrement dépensé à faire du remue-méninges et tester différentes lignes d'objet.
+
+## Instructions étape par étape
+
+<Stepper>
+
+1. **Connectez-vous à votre compte et créez une campagne**
+
+   - Voir : [Création de campagnes](/fr-ca/docs/campaign-creation/creating-campaigns)
+
+1. **Concevez votre contenu de courriel**, incluant le texte, les images et autres éléments
+   - Voir : [Utilisation du concepteur de courriel](/fr-ca/docs/campaign-creation/using-the-email-designer)
+
+1. **À la dernière étape du processus de création de campagne**, cliquez sur **Créer l'objet avec l'IA**
+![Bouton Créer l'objet avec l'IA](/images/campaign-creation/campaigns-generating-subject-lines-with-ai-306.png)
+   - Cela générera **trois options de ligne d'objet différentes** basées sur votre contenu de courriel
+
+![Trois options de ligne d'objet](/images/campaign-creation/campaigns-generating-subject-lines-with-ai-307.png)
+1. **Choisissez l'option de ligne d'objet la plus appropriée** ou personnalisez-la davantage
+   - Testez différentes lignes d'objet pour évaluer leur efficacité
+
+1. **Complétez les étapes restantes** pour finaliser votre campagne
+
+
+</Stepper>
+
+## Fonctionnalités clés
+
+- **Génération basée sur le contenu** : L'IA analyse votre contenu de courriel pour créer des lignes d'objet pertinentes
+- **Options multiples** : Obtenez trois suggestions de ligne d'objet différentes parmi lesquelles choisir
+- **Personnalisable** : Utilisez les suggestions de l'IA comme point de départ et personnalisez au besoin
+- **Flux de travail intégré** : Intégré dans le processus de création de campagne pour une utilisation transparente
+
+## Meilleures pratiques
+
+- **Révisez les trois options** avant de faire une sélection
+- **Personnalisez les suggestions de l'IA** pour correspondre à la voix de votre marque
+- **Testez différentes approches** pour voir ce qui résonne avec votre audience
+- **Considérez votre audience** lors de la sélection du style de ligne d'objet
+- **Test A/B** des lignes d'objet générées par l'IA vs créées manuellement
+
+## Avantages pour le marketing par courriel
+
+- **Taux d'ouverture plus élevés** grâce à des lignes d'objet plus pertinentes
+- **Création de campagne plus rapide** avec des suggestions automatisées
+- **Qualité cohérente** même lors de la création de multiples campagnes
+- **Optimisation basée sur les données** basée sur l'analyse du contenu du courriel
+- **Fatigue créative réduite** pour les expéditeurs de courriel fréquents
+
+## Dépannage
+
+## Articles connexes
+
+- [Utiliser l'IA pour créer votre pré-en-tête](/fr-ca/docs/ai/creating-email-preheaders-with-ai) - Générer des pré-en-têtes convaincants
+- [Utilisation de l'assistant IA pour créer le contenu de paragraphe](/fr-ca/docs/ai/creating-content-with-ai) - Créer le contenu du corps du courriel
+- [Création de campagnes](/fr-ca/docs/campaign-creation/creating-campaigns) - Construire vos campagnes de courriel
+- [Création et envoi de tests A/B](/fr-ca/docs/campaign-creation/creating-ab-tests-campaigns) - Tester différentes lignes d'objet
+- [Comprendre les taux d'ouverture](/fr-ca/docs/analytics/open-rates) - Mesurer l'efficacité des lignes d'objet

@@ -1,0 +1,67 @@
+---
+title: "Using templates"
+---
+
+This page will help you get started with the Template resource
+
+In this guide, you will learn the basics of working with templates in Cakemail.
+
+## Create a template
+
+Let's create your first template to get started. To do this, you can call the **Create a template** endpoint. Review the full API reference for a list of all the parameters you can pass.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/templates \
+  --header 'Accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'Content-Type: application/json' \
+  --data '{"name":"[template name]","content":{"type":"html","html":"[HTML content]"}}'
+```
+
+You now have an html template you can use as a starting point for your next campaigns or for sending your transactional emails.
+
+## Update a template
+
+Once you have a template, you can update it from time to time by using the **Update a template** endpoint.
+
+```shell
+curl --request PATCH \
+  --url https://api.cakemail.dev/templates/[template ID] \
+  --header 'Accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'Content-Type: application/json' \
+  --data '{"name":"[new template name]"}'
+```
+
+Next, let's try to use our template in a campaign.
+
+## Using a template in a campaign
+
+Now that you have a template, you can use it when creating a new campaign.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/campaigns \
+  --header 'Accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'Content-Type: application/json' \
+  --data '{"name":"<new tempalte name>","content":{"type":"html","template":{"id":[template ID]}}}'
+```
+
+You just created a new campaign using your template.
+
+## Using a template with transactional emails
+
+You can also use templates to send transactional emails. Since a template can contain personalization tags, it is possible to also specify custom attributes to be used with the template.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/emails \
+  --header 'Accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'Content-Type: application/json' \
+  --data '{...,"content":{"template":{"id":[template ID],"custom_attributes":[{"name":"name","value":"[contact name]"}]}}}'
+```
+
+You can explore the full API reference for more advanced features in the Asset API.

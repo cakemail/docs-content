@@ -1,0 +1,20 @@
+---
+title: "Next-gen API v1.7"
+---
+
+New functionalities through Webhooks and SMTP Endpoint
+
+### Email bounce webhook events are now available
+
+Webhooks can now be triggered on email bounce events.
+
+More events will be supported in future releases.
+
+[How to create and manage Webhooks](https://cakemail.dev/v1.6/docs/using-webhooks)  
+[Webhook API reference](https://cakemail.dev/v1.6/reference#webhooks)
+
+### Additional email headers for transactional emails
+
+We now allow additional headers to be added to transactional emails. These headers are also added as metadata in the logs. This gives developers additional flexibility to include more context from which the email was initiated, which can be useful later when processing data or debugging.
+
+When using the [Transactional SMTP API](https://cakemail.dev/reference#smtp-relay), the original envelope-from value will be copied into the x-sender-envelope-from header and the original return-path value into the x-original-return-path header.

@@ -1,0 +1,102 @@
+---
+title: "Getting started"
+---
+
+Cakemail's Email API enables you to seamlessly integrate email functionalities into your applications. This guide will walk you through the essential steps to send your first email using the API.
+
+## Obtain Your Access Token
+
+To interact with the Cakemail API, you'll need an access token. This token authenticates your requests. You can obtain it by making a POST request to the **/token** endpoint with your Cakemail _username_ and _password_.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/token \
+  --data-urlencode grant_type=password \
+  --data-urlencode username=YOUR_USERNAME \
+  --data-urlencode password=YOUR_PASSWORD
+```
+
+A successful response will provide an access token, which you'll use in subsequent API calls.
+
+#### Key Notes
+
+-   Cakemail API tokens are private and must be securely stored, only accessible to your backend application.
+
+## Create a Sender
+
+A confirmed Sender is required to send emails with the Email API.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/brands/default/senders \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer YOUR_ACCESS_TOKEN' \
+  --header 'content-type: application/json' \
+  --data '{"name":"Sender Name","email":"sender@example.com"}'
+```
+
+#### Key Notes
+
+-   If the sender email matches your account's email, it will be auto-confirmed.
+-   Otherwise, a confirmation email will be sent, and the recipient must click the activation link.
+
+## Find your List ID
+
+Contact Management is provided by the Cakemail Contact List feature, therefore a List must be used to send email with the Email API. Find your default List ID or create a new List.
+
+```shell
+curl --request GET \
+  --url https://api.cakemail.dev/lists \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer YOUR_ACCESS_TOKEN' \
+  --header 'content-type: application/json'
+```
+
+## Send your first Email
+
+Now that you have a confirmed sender, you can submit an email using the **/v2/emails** endpoint.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/v2/emails
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer YOUR_ACCESS_TOKEN' \
+  --header 'content-type: application/json' \
+  --data '{
+	"list_id": LIST_ID,
+  "sender": {
+    "id": SENDER_ID
+  },
+  "email": "recipient@example.com",
+  "content": {
+    "type": "marketing",
+    "subject": "Hello, world!",
+    "html": "<html><body>Hello, world!</body></html>",
+    "encoding": "utf-8"
+  }
+}'
+```
+
+#### Example Response
+
+```json
+{
+    "email": "recipient@example.com",
+    "object": "email",
+    "submitted": true,
+    "data": {
+        "id": "3fbfa67e-c4c4-4e03-8dfd-556037960374",
+        "status": "queued"
+    }
+}
+```
+
+## Check Email Status (Optional)
+
+You can follow the email status using the **/v2/emails/:email-id** endpoint.
+
+```shell
+curl --request GET \
+  --url https://api.cakemail.dev/v2/emails/EMAIL_ID \
+  --header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

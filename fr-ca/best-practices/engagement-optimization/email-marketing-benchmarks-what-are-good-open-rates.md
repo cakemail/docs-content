@@ -1,0 +1,42 @@
+---
+source: "https://support.cakemail.com/hc/en-us/articles/360058149693-Opens-clicks-bounces-unsubscribes-and-pollupostage-what-are-good-rates"
+---
+
+# Critères de référence pour le marketing par courriel : quels sont les bons taux d'ouverture, de clic et de rebond ?
+
+## Ouvre
+**Définition :** Pourcentage de personnes ayant ouvert le courriel. Basé sur le nombre de personnes ayant affiché les images et celles ayant cliqué sur un lien dans le courriel.
+
+**Les bons taux d'ouverture se situent entre 20 % et 40 %**, mais les expéditeurs qui suivent les bonnes pratiques de marketing par courriel peuvent atteindre une moyenne de 60 %.
+
+Vous pouvez influencer les taux d'ouverture en étant un expéditeur reconnu, en rédigeant un objet clair et en ayant un bon texte de pré-en-tête.
+
+## Clics
+**Définition :** Pourcentage de personnes ayant cliqué sur l'un des liens de votre courriel.
+
+**Les résultats attendus se situent entre 3 % et 8 %**
+
+Augmentez vos taux de clics en rendant l'information facile à comprendre et en donnant aux lecteurs un appel à l'action clair.
+
+## Rebonds
+**Définition :** Un rebond se produit lorsqu'une campagne n'est pas livrée à un destinataire.
+
+Différence majeure entre "Hard" – ex. adresse inexistante – et "Soft", problème temporaire avec la boîte mail ou le réseau.
+
+**Les hard bounces ne doivent jamais dépasser 1 %**
+
+## Désabonnements
+**Définition :** Un abonné peut ne plus souhaiter recevoir vos courriels. Dans ce cas, s'il clique sur le lien '[UNSUBSCRIBE]', il se retire volontairement de votre liste.
+
+**Devrait être inférieur à 1 %**
+
+## Pourriel
+**Définition :** Le nom populaire pour les courriels commerciaux non sollicités. Nous ne pouvons mesurer les plaintes que pour certains fournisseurs d'accès internet, mais tous les fournisseurs d'accès internet suivent les plaintes relatives au POLLUPOSTAGE et le nombre total de plaintes affecte votre réputation d'expéditeur.
+
+**Ne doit pas dépasser 0,10 % – 0,25 %**
+
+## Articles connexes
+
+- [Comment améliorer les taux d'ouverture des courriels : conseils d'experts](/fr-ca/best-practices/engagement-optimization/how-to-improve-email-open-rates-expert-tips)
+- [Comment augmenter l'engagement des courriels : stratégies éprouvées](/fr-ca/best-practices/engagement-optimization/how-to-increase-email-engagement-proven-strategies)
+- [Hygiène de la liste : maintenir une base de données de courriels saine](/fr-ca/best-practices/list-building/list-hygiene-maintaining-a-healthy-email-database)

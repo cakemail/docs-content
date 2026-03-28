@@ -1,0 +1,111 @@
+---
+title: "Using webhooks"
+---
+
+Extending your integration with Cakemail Next-gen API Webhooks
+
+This guide will show you how to create and manage HTTP callbacks on events occurring in Cakemail Next-gen API. These callbacks are sent with a payload processed by web service endpoints created and controlled by you, which extend your application and integration with Cakemail.
+
+## Creating a webhook
+
+Here is how to create a webhook that will be triggered when a user successfully logs in to their account.
+
+```shell
+curl --location --request POST \
+--url 'https://api.cakemail.dev/webhooks?account_id=<account_id>' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer [Access Token]' \
+--data-raw '{
+    "event": "User.LoggedIn",
+    "url": "https://webhook.example.com/endpoint",
+    "rate_limit": 10,
+    "rate_limit_period": "minute"
+}'
+```
+
+```json Payload sent with HTTP callback
+{
+  "event": "User.LoggedIn",
+  "account_id": [account_id],
+  "ip": "[source_ip]",
+  "user": {
+    "id": null,
+    "email": null,
+    "account_id": null
+  },
+  "created_on": 1627069315,
+  "data": {
+    "email": johndoe1@example.com",
+    "grant_type": "password",
+    "scopes": "user"
+  }
+}
+```
+
+## Securing your webhooks
+
+Even though it is optional, it is recommended to validate the origin of callbacks. Webhooks sent by Cakemail are verified by computing a digital signature. Each webhook request includes an `x-signature` header generated using a secret and the data sent in the request. To verify that the request comes from your configured webhook, calculate the HMAC digest according to the following algorithm and compare it to the value in the x-signature header. If they match, you can be sure that the webhook was sent from your configured webhook in your Cakemail account.
+
+```javascript
+app.use(
+    express.json({
+        // Store the rawBody buffer on the request
+        verify: (req: any, res, buf) => {
+            req.rawBody = buf;
+        },
+    })
+);
+
+app.post("/webhook", async (req, res) => {
+    //Extract x-signature Header from the request
+    const hmacHeader = req.get("x-signature");
+
+    //Create a hash based on the parsed body
+    const hash = crypto
+        .createHmac("sha256", secret)
+        .update(req.rawBody)
+        .digest("base64");
+
+    // Compare the created hash with the value of the x-signature header
+    if (hash === hmacHeader) {
+        console.log("Webhook is originating from Cakemail");
+        res.sendStatus(200);
+    } else {
+        console.log("Signature is invalid, rejected");
+        res.sendStatus(403);
+    }
+});
+```
+
+```shell
+curl --location --request GET \
+--url 'https://api.cakemail.dev/webhooks/[token_id]?account_id=[account_id]' \
+--header 'Authorization: Bearer [Access Token]' \
+```
+
+```json
+{
+    "id": "[webhook_id]",
+    "signature": {
+        "key": "[secret_key]",
+        "hash_function": "sha256"
+    },
+    "data": {
+        "id": "[webhook_id]",
+        "status": "active",
+        "event": "User.LoggedIn",
+        "url": "https://webhook.example.com/endpoint",
+        "archived_at": null,
+        "rate_limit": 10,
+        "rate_limit_period": "minute"
+    }
+}
+```
+
+For more details and information on supported events and reminders, see the [Webhooks API reference](/api/reference/webhook#create-a-webhook).
+
+---
+
+## Limitations
+
+-   For now, events are triggered by actions occurring in Next-gen API only; Cakemail Next-gen App Forms are yet to be supported.

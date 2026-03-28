@@ -1,0 +1,22 @@
+---
+title: "Next-gen API v1.6"
+---
+
+Introducing webhook events
+
+## Webhooks
+
+"User-defined HTTP callbacks" can now be configured on events on accounts, campaigns, contacts, emails and users. The payload sent with them can be interpreted by your web services and 3rd party web services, therefore, augmenting your Cakemail integration.
+
+Usage examples: a developer could improve the audit trail by logging different events on user accounts, or, when a contact is updated, a row could be synchronized in a Google sheet.
+
+Webhooks can now be triggered on most events. For example: when an account is created, updated or deleted, or when a contact is added to a list or unsubscribe, or when a transactional email is sent. The complete events list is available in the documentation.
+
+[How to create and manage Webhooks](https://cakemail.dev/docs/using-webhooks)  
+[Webhook API reference](https://cakemail.dev/v1.6/reference#webhooks)
+
+## Customizable system emails for white label resellers
+
+System emails have been redesigned. White label resellers can now customize their own system emails.
+
+[System emails API reference (Limited to qualified partners)](https://cakemail.dev/v1.6/reference#system-emails).

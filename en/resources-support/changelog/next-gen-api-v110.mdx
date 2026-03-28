@@ -1,0 +1,26 @@
+---
+title: "Next-gen API v1.10"
+---
+
+You can now export your contacts and two [new webhooks](https://cakemail.dev/reference/createwebhook), and more.
+
+## Contact export
+
+- You can easily export your contacts from Cakemail.
+- You can export contacts from a list or a segment of your audience.  You can also apply the same filters as used on the Contact List resource.
+- A powerful asynchronous system supports the new Contact Export feature; first, you [start](https://cakemail.dev/reference/exportcontacts) the Contact Export then you [follow its progress](https://cakemail.dev/reference/getcontactsexport) until it is ready to [download](https://cakemail.dev/reference/downloadcontactsexport).
+
+## New Features
+
+- Contact Export - you can [export contacts](https://cakemail.dev/reference/exportcontacts) to CSV
+- Two [new webhooks](https://cakemail.dev/reference/createwebhook) related to Contact Export
+- Partners can [change the monthly statistics reset date](https://cakemail.dev/reference/patchaccount) of their sub-accounts
+- Cursor pagination for [Contact List](https://cakemail.dev/reference/listcontactsoflist), dramatically increasing the pagination speed for enormous Contact Lists
+- New Tasks API to [list and inspect asynchronous tasks](https://cakemail.dev/reference/listtasks), currently only listing Contact Exports. Future asynchronous tasks will be included there as they are released.
+- For select Partners integrating Cakemail as part of their software offering, we now allow [skipping the initial email verification](https://cakemail.dev/reference/createaccount) when creating a sub-account.  If you are interested, please contact support.
+
+## Bug Fixes
+
+- Fixed a bug where the Email Log type was incorrectly returned as null.
+- Fixed a bug where an account's phone, fax and website could not be emptied using 'null' as value.
+- Improved clickthru statistic calculations.

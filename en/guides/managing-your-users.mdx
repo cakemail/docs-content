@@ -1,0 +1,91 @@
+---
+title: "Managing your users"
+---
+
+This page will help you get started with the User resource
+
+One of the most common thing you will want to do is manage your users. Let's look at how to do this with Cakemail Account API.
+
+## Create a user
+
+Let's create your first user. For that, you will need to call the **Create a user** endpoint along with the user's information.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/users \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"email":"[email address]","first_name":"[first name]","last_name":"[last name]","language":"[language code]","timezone":"[timezone]","password":"[password]"}'
+```
+
+This will return you the user ID which you can use in future API calls.
+
+## Update a user
+
+Now, let's say you made a typo inputting the first name while creating the user. You can fix it by calling the **Update a user** endpoint along with the corrected first name.
+
+```shell
+curl --request PATCH \
+  --url https://api.cakemail.dev/users/[user ID] \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"first_name":"[first name]"}'
+```
+
+Your user's first name is now correct.
+
+## Show all users
+
+If you want to list all the users that are part of your account. You can call the **Show all users in my account** endpoint.
+
+```shell
+curl --request GET \
+  --url 'https://api.cakemail.dev/users?page=1&per_page=50&with_count=false' \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+This will return the lists of all users that are in your account.
+
+## Suspend a user
+
+Let's say you want to restrict access of a specific user to your account. You can call the **Suspend a user** endpoint.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/users/[user ID]/suspend \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+The user no longer has access to Cakemail.
+
+## Unsuspend a user
+
+Now, you want to restore the access of that user. Simply call the **Unsuspend a user** endpoint.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/users/[user ID]/unsuspend \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+The user is active again.
+
+## Delete a user
+
+After a while, you need to completely remove the user from your account. You can do so by calling the **Delete a user** endpoint.
+
+```shell
+curl --request DELETE \
+  --url https://api.cakemail.dev/users/[user ID] \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+The user is no longer part of your account.
+
+You can explore the full API reference for more advanced features in the Account API.

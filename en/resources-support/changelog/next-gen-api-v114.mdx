@@ -1,0 +1,18 @@
+---
+title: "Next-gen API v1.14"
+---
+
+> Mandatory DMARC authentication
+
+## What's new
+
+All emails sent by Cakemail will be authenticated with DMARC. Sender email addresses that are not authenticated will be automatically modified to use an authenticated domain. Cakemail is thus implementing the necessary structure to support the best practices and anti-spam policies.
+
+Here is how unauthenticated email addresses are transformed to be authenticated:
+
+👉 Example of an unauthenticated sender's address: [client@gmail.com](mailto:client@gmail.com)  
+‍👉 Transformed and authenticated address: client+gmail.com@[authenticated_domain.com]
+
+The domain cmtd1.com will be used to transform sender addresses to ensure authentication and email deliverability.
+
+If the sender address belongs to a client account under a reseller domain that is already authenticated, the emails will be sent with this authenticated domain.

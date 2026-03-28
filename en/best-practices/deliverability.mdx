@@ -1,0 +1,274 @@
+---
+source: "https://support.cakemail.com/hc/en-us/sections/best-practices-deliverability"
+---
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "zudoku/ui/Card"
+
+# Email Deliverability Best Practices
+
+Ensure your emails reach the inbox, not the spam folder. Master the technical and strategic aspects of email deliverability to maximize your campaign effectiveness.
+
+## 📚 Articles in This Section
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '1.5rem' }}>
+  <a href="/en/best-practices/deliverability/email-deliverability-optimization-complete-guide" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>📬 Email Deliverability Optimization</CardTitle>
+        <CardDescription style={{ fontSize: '0.9em', fontWeight: '600' }}>Complete Guide</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Comprehensive strategies to improve inbox placement rates. Learn about sender reputation, authentication protocols, and content optimization.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/deliverability/choosing-the-right-sender-email-address" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🏷️ Choosing the Right Sender Address</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Select sender addresses that build trust and improve deliverability. Understand domain reputation and sender name best practices.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/deliverability/avoiding-noreply-email-addresses" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🚫 Avoiding "noreply@" Addresses</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Learn why no-reply addresses hurt engagement and deliverability, plus alternatives that encourage subscriber interaction.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/deliverability/why-you-should-use-your-own-domain-for-sending" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🏠 Use Your Own Domain</CardTitle>
+        <CardDescription style={{ fontSize: '0.9em', fontWeight: '600' }}>For Email Sending</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Understand the benefits of using your own domain versus free email services for professional email marketing.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/deliverability/how-to-avoid-spam-traps-and-protect-your-reputation" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🕸️ Avoid Spam Traps</CardTitle>
+        <CardDescription style={{ fontSize: '0.9em', fontWeight: '600' }}>Protect Your Reputation</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Identify and avoid different types of spam traps that can severely damage your sender reputation and deliverability.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/deliverability/how-to-reduce-spam-complaints-prevention-strategies" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🛡️ Reduce Spam Complaints</CardTitle>
+        <CardDescription style={{ fontSize: '0.9em', fontWeight: '600' }}>Prevention Strategies</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Minimize spam complaints with best practices for permission, content, frequency, and subscriber expectations.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/deliverability/dedicated-ip-addresses-when-and-why-you-need-one" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ height: '100%', cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-lg hover:-translate-y-1">
+      <CardHeader>
+        <CardTitle>🔌 Dedicated IP Addresses</CardTitle>
+        <CardDescription style={{ fontSize: '0.9em', fontWeight: '600' }}>When and Why You Need One</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>Determine if a dedicated IP is right for your sending volume and learn how to manage IP reputation effectively.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+</div>
+
+## 🎯 Deliverability Framework
+
+### 1. **Technical Foundation**
+- SPF, DKIM, DMARC authentication
+- Proper DNS configuration
+- IP warming (if applicable)
+- Domain reputation building
+
+### 2. **List Quality**
+- Permission-based collection
+- Regular list hygiene
+- Bounce management
+- Engagement monitoring
+
+### 3. **Content Excellence**
+- Balanced text/image ratio
+- Relevant subject lines
+- Spam filter avoidance
+- Mobile optimization
+
+### 4. **Sending Practices**
+- Consistent sending patterns
+- Optimal frequency
+- Targeted segmentation
+- Engagement-based sending
+
+## 📊 Key Deliverability Metrics
+
+Monitor these indicators:
+- **Inbox Placement Rate**: % reaching primary inbox
+- **Spam Rate**: % landing in spam folders
+- **Bounce Rate**: Under 2% (hard + soft)
+- **Complaint Rate**: Under 0.1%
+- **Sender Score**: 80+ is good
+
+## 💡 Deliverability Best Practices
+
+### Authentication Setup
+✅ Configure SPF records  
+✅ Implement DKIM signing  
+✅ Set up DMARC policy  
+✅ Verify reverse DNS  
+
+### Reputation Management
+- Warm up new IPs gradually
+- Monitor blacklists regularly
+- Maintain consistent volume
+- Track sender scores
+
+### Content Optimization
+- Avoid spam trigger words
+- Maintain 60/40 text-to-image ratio
+- Use clear, honest subject lines
+- Include unsubscribe links
+
+## 🚨 Warning Signs
+
+Watch for these deliverability issues:
+- Sudden drop in open rates
+- Increasing bounce rates
+- Rising spam complaints
+- Blacklist appearances
+- ISP throttling or blocks
+
+## 🛠️ Troubleshooting Guide
+
+### Low Open Rates
+1. Check authentication records
+2. Review sender reputation
+3. Analyze subject lines
+4. Test different send times
+
+### High Bounce Rates
+1. Clean your list immediately
+2. Verify email collection process
+3. Check for typos in addresses
+4. Implement double opt-in
+
+### Spam Folder Placement
+1. Review content for spam triggers
+2. Check authentication setup
+3. Analyze engagement rates
+4. Consider sender address changes
+
+## 🔧 Technical Requirements
+
+### Must-Have Authentication
+- **SPF**: Authorize sending IPs
+- **DKIM**: Cryptographic signatures
+- **DMARC**: Policy enforcement
+
+### Infrastructure Needs
+- Consistent sending IP
+- Proper subdomain setup
+- Clean IP history
+- Monitoring tools
+
+## 🚀 Next Steps
+
+After mastering deliverability:
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+  <a href="/en/best-practices/engagement-optimization/how-to-improve-email-open-rates-expert-tips" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>📊 Optimize Engagement</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Improve open rates and engagement once delivery is optimized.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/list-building/list-hygiene-maintaining-a-healthy-email-database" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>🧹 Maintain List Quality</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Keep your email list clean for continued deliverability.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/engagement-optimization/email-marketing-benchmarks-what-are-good-open-rates" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>📊 Track Performance</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Monitor and benchmark your deliverability metrics.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+</div>
+
+## Related Categories
+
+<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+  <a href="/en/best-practices/list-building/building-a-quality-email-list-best-practices" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>🏗️ List Building</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Quality lists improve deliverability significantly.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/compliance-legal/permission-based-email-marketing-why-it-matters" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>⚖️ Compliance & Legal</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Legal compliance aids email delivery and reputation.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+  
+  <a href="/en/best-practices/advanced-strategies/email-sender-reputation-how-to-build-and-maintain" style={{ textDecoration: 'none', color: 'inherit' }}>
+    <Card style={{ cursor: 'pointer', transition: 'transform 0.2s, box-shadow 0.2s' }} className="hover:shadow-md hover:-translate-y-1">
+      <CardHeader style={{ paddingBottom: '0.5rem' }}>
+        <CardTitle style={{ fontSize: '1.1rem' }}>🚀 Advanced Strategies</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <CardDescription style={{ fontSize: '0.9em' }}>Advanced reputation management and deliverability tactics.</CardDescription>
+      </CardContent>
+    </Card>
+  </a>
+</div>

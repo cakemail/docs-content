@@ -1,0 +1,289 @@
+---
+title: "Managing your contacts"
+---
+
+This page will help you get started with the Contact API.
+
+## Create your first list
+
+Before you can add a contact, you will need to create your first **List**. A list allows you to group your contacts in one place and define additional custom fields. You can also build segments to better target your audience.
+
+To create a list, you will call the **Create a list** endpoint along with a name and a default sender.
+
+```python
+import requests
+
+url = "https://api.cakemail.dev/lists"
+
+payload = {
+    "language": "en_US",
+    "name": "List Name"
+}
+headers = {
+    "accept": "application/json",
+    "content-type": "application/json",
+    "authorization": f"Bearer {token}"
+}
+
+response = requests.post(url, json=payload, headers=headers)
+
+print(response.text)
+```
+
+```php
+<?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client->request('POST', 'https://api.cakemail.dev/lists', [
+  'body' => '{"language":"en_US","name":"List Name"}',
+  'headers' => [
+    'accept' => 'application/json',
+    'content-type' => 'application/json',
+    'authorization' => "Bearer {$token}"
+  ],
+]);
+
+echo $response->getBody();
+```
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/lists \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"default_sender":{"id":"[sender id]"},"language":"en_US","name":"[list name]"}'
+```
+
+This call will return you a list object containing an **ID**. But before you can use this list, you will need to accept our [anti-spam policy](https://www.cakemail.com/anti-spam-policy/) for that list. You can call the **Accept policy for a list** endpoint to accept the policy for your new list.
+
+```python
+import requests
+
+url = f"https://api.cakemail.dev/lists/{list_id}/accept-policy"
+
+headers = {"accept": "application/json", "authorization": f"Bearer {token}"}
+
+response = requests.post(url, headers=headers)
+
+print(response.text)
+```
+
+```php
+<?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client->request('POST', "https://api.cakemail.dev/lists/{$list_id}/accept-policy", [
+  'headers' => [
+    'accept' => 'application/json',
+    'authorization' => "Bearer {$token}"
+  ],
+]);
+
+echo $response->getBody();
+```
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/lists/[list ID]/accept-policy \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+You now have a working list.
+
+## Add your first contact
+
+Now let's add your first contact by calling the **Add a contact in a list** endpoint along with a contact email address.
+
+```python
+import requests
+
+url = f"https://api.cakemail.dev/lists/{list_id}/contacts"
+
+headers = {
+    "accept": "application/json",
+    "content-type": "application/json",
+    "authorization": f"Bearer {token}"
+}
+
+response = requests.post(url, headers=headers)
+
+print(response.text)
+```
+
+```php
+<?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client->request('POST', "https://api.cakemail.dev/lists/{$list_id}/contacts", [
+  'headers' => [
+    'accept' => 'application/json',
+    'content-type' => 'application/json',
+    'authorization' => "Bearer {$token}"
+  ],
+]);
+
+echo $response->getBody();
+```
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/lists/[list ID]/contacts \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"email":"[contact email address]"}'
+```
+
+You now have your first contact in your list!
+
+## Import your contacts
+
+In case you already have a list of contacts, you might want to import it in Cakemail instead of adding it one by one. You can do so by calling the **Import contacts** endpoint along with your list of contacts.
+
+```python
+import requests
+
+url = f"https://api.cakemail.dev/lists/{list_id}/import-contacts"
+
+payload = {
+    "remove_tags": False,
+    "remove_interests": False,
+    "contacts": [
+      { "email": "contact_1@email.com" },
+      { "email": "contact_2@email.com" },
+    ]
+}
+headers = {
+    "accept": "application/json",
+    "content-type": "application/json",
+    "authorization": f"Bearer {token}"
+}
+
+response = requests.post(url, json=payload, headers=headers)
+
+print(response.text)
+```
+
+```php
+<?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client->request('POST', "https://api.cakemail.dev/lists/{$list_id}/import-contacts", [
+  'body' => '{"contacts":[{"email":"contact_1@email.com"}],"resubscribe":false,"remove_tags":true,"remove_interests":true}',
+  'headers' => [
+    'accept' => 'application/json',
+    'content-type' => 'application/json',
+    'authorization' => "Bearer {$token}"
+  ],
+]);
+
+echo $response->getBody();
+```
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/lists/[list ID]/import-contacts \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"import_to":"active","contacts":[{"email":"[1st contact email address"},{"email":"2nd contact email address"},...]}'
+```
+
+You now have plenty of contacts in your list. It is important to note that you might have to call this endpoint multiple times as we have a limit to import a maximum of **1,000 contacts** at a time.
+
+## Display all your contacts
+
+At any time, you can show the contacts of your contact list by calling the **Show all contacts in a list** endpoint.
+
+```python
+import requests
+
+url = f"https://api.cakemail.dev/lists/{list_id}/contacts"
+
+headers = {
+  "accept": "application/json",
+  "authorization": f"Bearer {token}"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
+```
+
+```php
+<?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client->request('GET', "https://api.cakemail.dev/lists/{$list_id}/contacts", [
+  'headers' => [
+    'accept' => 'application/json',
+    'authorization' => "Bearer {$token}"
+  ],
+]);
+
+echo $response->getBody();
+```
+
+```shell
+curl --request GET \
+  --url 'https://api.cakemail.dev/lists/[list ID]/contacts?page=1&per_page=50&with_count=false&filter=status%3D%3Dsubscribed' \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+This call will return the first 50 contacts of your list who are **subscribed**. You can change how the pagination is done by using the query parameters **Page** and **Per Page**. If you want the **Pagination** object to also contain the total count of contacts in your list, you can specify the query parameters **With Count** to be true. Finally the query parameter **Filter** which is optional can be used to search the list.
+
+## Unsubscribe a contact
+
+Although this can be done automatically using our tracking links, there are times where you might want to manage the subscriptions on your side. To remain compliant, you still need to sync the people who unsubscribed on your side with our API. This can be done by calling the **Unsubscribe a contact from a list** endpoint.
+
+```python
+import requests
+
+url = f"https://api.cakemail.dev/lists/{list_id}/contacts/{contact_id}/unsubscribe"
+
+headers = {"accept": "application/json", "authorization": f"Bearer {token}"}
+
+response = requests.post(url, headers=headers)
+
+print(response.text)
+```
+
+```php
+<?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client->request('POST', "https://api.cakemail.dev/lists/{$list_id}/contacts/{$contact_id}/unsubscribe", [
+  'headers' => [
+    'accept' => 'application/json',
+    'authorization' => "Bearer {$token}"
+  ],
+]);
+
+echo $response->getBody();
+```
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/lists/[list ID]/contacts/[contact ID]/unsubscribe \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+Using a combination of adds, imports and unsubscribes, you now know how to keep your list in sync with our Contact API.
+
+You can explore the full API reference for more advanced features in the Contact API.

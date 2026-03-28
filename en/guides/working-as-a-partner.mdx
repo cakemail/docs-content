@@ -1,0 +1,106 @@
+---
+title: "Working as a partner"
+---
+
+This page will help you get started with the Parter API
+
+Before you get access to the Partner API, you will need to contact our sales team to activate your partner account.
+
+In this guide, you will learn the basics of managing your sub-accounts in Cakemail.
+
+## Create your first sub-account
+
+Let's start your partner journey by creating your first sub-account. To do so, you will call the **Create a sub-account** endpoint along with the sub-account details.
+
+```shell
+curl --request POST \
+  --url 'https://api.cakemail.dev/accounts' \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"account_owner":{"email":"[account owner email address]","first_name":"[account owner first name]","last_name":"[account owner last name]","language":"[account owner language code]","timezone":"[account owner timezone]"},"trial":false,"partner":false,"name":"[sub-account name]"}'
+```
+
+This will return you a sub-account ID which you will be able to use in future API Calls.
+
+## Update a sub-account
+
+If you need to update a sub-account, you can simply call the **Update a sub-account** endpoint along with the updated information.
+
+```shell
+curl --request PATCH \
+  --url https://api.cakemail.dev/accounts/[sub-account ID] \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]' \
+  --header 'content-type: application/json' \
+  --data '{"name":"[new sub-account name]"}'
+```
+
+You have successfully update your sub-account.
+
+## List all your sub-accounts
+
+You can list all your sub-accounts in your partner account by calling the **Show all sub-accounts** endpoint.
+
+```shell
+curl --request GET \
+  --url 'https://api.cakemail.dev/accounts?page=1&per_page=50&with_count=false&recursive=false' \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+This will return the list of sub-accounts you have in your partner account.
+
+## Suspend a sub-account
+
+Now, let's say you need to suspend a sub-account, for exemple because of a failed billing payment. You can call the **Suspend a sub-account** endpoint.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/accounts/[sub-account ID]/suspend \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+The sub-account is now suspended and all the users of that sub-account no longer have access.
+
+## Unsuspend a sub-account
+
+The situation that caused the suspension of the sub-account is now resolved and you need to unsuspend the sub-account. You can do so by calling the **Unsuspend a sub-account** endpoint.
+
+```shell
+curl --request POST \
+  --url https://api.cakemail.dev/accounts/[sub-account ID]/unsuspend \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+The sub-account is now active again and all the users of that sub-account have their access restored.
+
+## Access a sub-account resource
+
+One of the cool thing about Cakemail is that you have access to all your sub-accounts resources. For exemple, if you want to list all the campaigns of a sub-account, you can call the **Show all campaigns** endpoint of the Campaign API along with the **account_id** query parameter.
+
+```shell
+curl --request GET \
+  --url 'https://api.cakemail.dev/campaigns?page=1&per_page=50&with_count=false&account_id=[sub-account ID]' \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+This will return the list of campaigns of your sub-account. The same way, you can use any endpoint of any of our APIs along with the **account_id** query parameter to access the resources of your sub-accounts.
+
+## Delete a sub-account
+
+Finally, to delete a sub-account simply make a call to the **Delete a sub-account** endpoint.
+
+```shell
+curl --request DELETE \
+  --url https://api.cakemail.dev/accounts/[sub-account ID] \
+  --header 'accept: application/json' \
+  --header 'authorization: Bearer [access token]'
+```
+
+The sub-account is no longer part of your partner account.
+
+You can explore the full API reference for more advanced features in the Partner API.

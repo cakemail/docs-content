@@ -1,0 +1,81 @@
+# Creating an Automated Welcome Email
+
+## Description
+
+A confirmation or welcome email is a message sent to a person after they perform a specific action, such as subscribing to a mailing list. Our application allows you to automate this action and customize it according to your brand image.
+
+## Why this is important
+
+Your welcome emails will form the first impression your subscribers have of your newsletter. It's also a good place to greet customers and ask them to add your email address to their safe sender list. Additionally, personalizing your confirmation email will help your communication appear more human.
+
+## Step-by-step instructions
+
+You can automate your confirmation email, which will enable immediate and seamless contact with your subscribers. Here's how to proceed:
+
+<Stepper>
+
+1. Click on Automations.
+
+1. Click on the + sign at the top right of the page.
+   - You can also create it from the Create button
+
+1. Select an existing list and click **Continue** to connect the new automation
+![2712CFD6-BF46-436D-8A15-5D1BAB67B6BD_4_5005_c.jpeg](/images/automations/89EC9C8B-AF4C-4392-A6B8-E576420E1C6A.png)
+
+1. In the **Predefined automations** tab, select the **Welcome new contacts** panel. You'll then be directed to the automation editing page
+![Screenshot 1](/images/automations/2712CFD6-BF46-436D-8A15-5D1BAB67B6BD_4_5005_c.jpeg)
+
+1. Specify the delay for the action in the edit condition
+![9850B35A-8AE0-4494-8A79-B119DB6065BC_4_5005_c.jpeg](/images/automations/Automation_Delay.gif)
+
+1. Select the **Send an email** action in the workflow view
+
+1. Click **Edit** to customize the email
+![89EC9C8B-AF4C-4392-A6B8-E576420E1C6A.png](/images/automations/Automate%20Edit%20Email.gif)
+![89EC9C8B-AF4C-4392-A6B8-E576420E1C6A.png](/images/automations/59EE30EF-6DA5-4A68-A351-104179BCE48D_4_5005_c.jpeg)
+
+1. Use the email designer to customize your confirmation email. Find a description of this tool here.
+
+1. When you're done editing the email, click **Save and exit**
+![Automate_Edit_Email.gif](/images/automations/9850B35A-8AE0-4494-8A79-B119DB6065BC_4_5005_c.jpeg)
+
+1. Activate the automation by selecting the button at the top right image: Automation activation
+![Automation_Turn_On.gif](/images/automations/Automation_Turn_On.gif)
+![Automation_Delay.gif](/images/automations/8BE1A670-0AE2-4891-B40E-1E7C23963F2F_4_5005_c.jpeg)
+
+1. Select **Save and exit**
+An email with your personalized welcome message will be automatically sent to your new recipient each time they subscribe to your content after the determined delay.
+</Stepper>
+
+## Troubleshooting
+
+**Welcome email doesn't send**
+
+- Confirm that the automation is activated (the toggle button should be ON)
+- Check that the trigger is set to "Contact subscribes to list"
+- Ensure new contacts are being added to the correct list
+
+**Email goes to spam**
+
+- Include authentication instructions in your welcome email
+- Ask subscribers to add your sender address to their contacts
+- Avoid spam trigger words in subject lines and content
+
+**Timing issues**
+
+- Check the delay settings in the automation workflow
+- Set delay to "immediately" for instant welcome emails
+- Consider time zones if using scheduled delays
+
+**Personalization not working**
+
+- Ensure merge tags are properly formatted (e.g., `[firstname]`)
+- Check that subscriber data includes the fields you're trying to personalize
+- Test with a sample contact that has all required fields filled
+
+## Related articles
+
+- [Understanding email automation](/en/docs/automations/understanding-email-automation) - Automation basics
+- [Setting up subscription confirmation email](/en/docs/audience-building/subscription-confirmation-email) - Pre-welcome confirmation
+- [Creating a looping automation](/en/docs/automations/creating-a-looping-automation) - Advanced automation
+- [First steps](/en/docs/first-steps) - Getting started guide
