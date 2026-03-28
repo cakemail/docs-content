@@ -1,0 +1,1208 @@
+{
+  "glossary": {
+    "email_marketing": {
+      "en": "email marketing",
+      "fr": "marketing par courriel",
+      "fr-CA": "marketing par courriel",
+      "es": "marketing por correo electrónico",
+      "it": "email marketing"
+    },
+    "email": {
+      "en": "email",
+      "fr": "email",
+      "fr-CA": "courriel",
+      "es": "correo electrónico",
+      "it": "email"
+    },
+    "emails": {
+      "en": "emails",
+      "fr": "emails",
+      "fr-CA": "courriels",
+      "es": "correos electrónicos",
+      "it": "email"
+    },
+    "newsletter": {
+      "en": "newsletter",
+      "fr": "infolettre",
+      "fr-CA": "infolettre",
+      "es": "boletín informativo",
+      "it": "newsletter"
+    },
+    "spam": {
+      "en": "spam",
+      "fr": "spam",
+      "fr-CA": "pourriel",
+      "es": "spam",
+      "it": "spam"
+    },
+    "unsubscribe": {
+      "en": "unsubscribe",
+      "fr": "se désabonner",
+      "fr-CA": "se désabonner",
+      "es": "cancelar suscripción",
+      "it": "annullare l'iscrizione"
+    },
+    "subscriber": {
+      "en": "subscriber",
+      "fr": "abonné",
+      "fr-CA": "abonné",
+      "es": "suscriptor",
+      "it": "iscritto"
+    },
+    "mailing_list": {
+      "en": "mailing list",
+      "fr": "liste de diffusion",
+      "fr-CA": "liste d'envoi",
+      "es": "lista de correo",
+      "it": "mailing list"
+    },
+    "sender": {
+      "en": "sender",
+      "fr": "expéditeur",
+      "fr-CA": "expéditeur",
+      "es": "remitente",
+      "it": "mittente"
+    },
+    "recipient": {
+      "en": "recipient",
+      "fr": "destinataire",
+      "fr-CA": "destinataire",
+      "es": "destinatario",
+      "it": "destinatario"
+    },
+    "bounce": {
+      "en": "bounce",
+      "fr": "bounce",
+      "fr-CA": "rebond",
+      "es": "rebote",
+      "it": "rimbalzo"
+    },
+    "hard_bounce": {
+      "en": "hard-bounce",
+      "fr": "rebond définitif",
+      "fr-CA": "rebond définitif",
+      "es": "rebote duro",
+      "it": "rimbalzo definitivo"
+    },
+    "soft_bounce": {
+      "en": "soft-bounce",
+      "fr": "rebond temporaire",
+      "fr-CA": "rebond temporaire",
+      "es": "rebote suave",
+      "it": "rimbalzo temporaneo"
+    },
+    "open_rate": {
+      "en": "open rate",
+      "fr": "taux d’ouverture",
+      "fr-CA": "taux d'ouverture",
+      "es": "tasa de apertura",
+      "it": "tasso di apertura"
+    },
+    "click_rate": {
+      "en": "click rate",
+      "fr": "taux de clic",
+      "fr-CA": "taux de clic",
+      "es": "tasa de clics",
+      "it": "tasso di clic"
+    },
+    "conversion_rate": {
+      "en": "conversion rate",
+      "fr": "taux de conversion",
+      "fr-CA": "taux de conversion",
+      "es": "tasa de conversión",
+      "it": "tasso di conversione"
+    },
+    "deliverability": {
+      "en": "deliverability",
+      "fr": "délivrabilité",
+      "fr-CA": "délivrabilité",
+      "es": "entregabilidad",
+      "it": "deliverability"
+    },
+    "engagement": {
+      "en": "engagement",
+      "fr": "pourcentage d'engagement",
+      "fr-CA": "pourcentage d'engagement",
+      "es": "participación",
+      "it": "coinvolgimento"
+    },
+    "personalization": {
+      "en": "personalization",
+      "fr": "personnalisation",
+      "fr-CA": "personnalisation",
+      "es": "personalización",
+      "it": "personalizzazione"
+    },
+    "segmentation": {
+      "en": "segmentation",
+      "fr": "segmentation",
+      "fr-CA": "segmentation",
+      "es": "segmentación",
+      "it": "segmentazione"
+    },
+    "automation": {
+      "en": "automation",
+      "fr": "automatisation",
+      "fr-CA": "automatisation",
+      "es": "automatización",
+      "it": "automazione"
+    },
+    "template": {
+      "en": "template",
+      "fr": "modèle",
+      "fr-CA": "gabarit",
+      "es": "plantilla",
+      "it": "modello"
+    },
+    "campaign": {
+      "en": "campaign",
+      "fr": "campagne",
+      "fr-CA": "campagne",
+      "es": "campaña",
+      "it": "campagna"
+    },
+    "subject_line": {
+      "en": "subject line",
+      "fr": "ligne d'objet",
+      "fr-CA": "ligne d'objet",
+      "es": "línea de asunto",
+      "it": "oggetto"
+    },
+    "preheader": {
+      "en": "preheader",
+      "fr": "pré-en-tête",
+      "fr-CA": "pré-en-tête",
+      "es": "preencabezado",
+      "it": "preintestazione"
+    },
+    "call_to_action": {
+      "en": "call to action",
+      "fr": "appel à l'action",
+      "fr-CA": "appel à l'action",
+      "es": "llamada a la acción",
+      "it": "call to action"
+    },
+    "landing_page": {
+      "en": "landing page",
+      "fr": "page d'atterrissage",
+      "fr-CA": "page de destination",
+      "es": "página de destino",
+      "it": "landing page"
+    },
+    "opt_in": {
+      "en": "opt-in",
+      "fr": "autorisation sur inscription",
+      "fr-CA": "consentement",
+      "es": "suscripción",
+      "it": "iscrizione"
+    },
+    "double_opt_in": {
+      "en": "double opt-in",
+      "fr": "double opt-in",
+      "fr-CA": "inscription avec confirmation",
+      "es": "doble suscripción",
+      "it": "doppia iscrizione"
+    },
+    "best_practices": {
+      "en": "best practices",
+      "fr": "meilleures pratiques",
+      "fr-CA": "meilleures pratiques",
+      "es": "mejores prácticas",
+      "it": "best practice"
+    },
+    "compliance": {
+      "en": "compliance",
+      "fr": "conformité",
+      "fr-CA": "conformité",
+      "es": "cumplimiento",
+      "it": "conformità"
+    },
+    "privacy_policy": {
+      "en": "privacy policy",
+      "fr": "politique de confidentialité",
+      "fr-CA": "politique de confidentialité",
+      "es": "política de privacidad",
+      "it": "informativa sulla privacy"
+    },
+    "terms_of_service": {
+      "en": "terms of service",
+      "fr": "conditions d'utilisation",
+      "fr-CA": "conditions d'utilisation",
+      "es": "términos de servicio",
+      "it": "termini di servizio"
+    },
+    "blacklist": {
+      "en": "blacklist",
+      "fr": "blacklist",
+      "fr-CA": "liste noire",
+      "es": "lista negra",
+      "it": "blacklist"
+    },
+    "whitelist": {
+      "en": "whitelist",
+      "fr": "liste blanche",
+      "fr-CA": "liste blanche",
+      "es": "lista blanca",
+      "it": "whitelist"
+    },
+    "sender_reputation": {
+      "en": "sender reputation",
+      "fr": "réputation d'expéditeur",
+      "fr-CA": "réputation d'expéditeur",
+      "es": "reputación del remitente",
+      "it": "reputazione del mittente"
+    },
+    "inbox": {
+      "en": "inbox",
+      "fr": "boite de réception",
+      "fr-CA": "boite de réception",
+      "es": "bandeja de entrada",
+      "it": "posta in arrivo"
+    },
+    "spam_folder": {
+      "en": "spam folder",
+      "fr": "dossier spam",
+      "fr-CA": "dossier pourriels",
+      "es": "carpeta de spam",
+      "it": "cartella spam"
+    },
+    "related_articles": {
+      "en": "Related Articles",
+      "fr": "Articles connexes",
+      "fr-CA": "Articles connexes",
+      "es": "Artículos relacionados",
+      "it": "Articoli correlati"
+    },
+    "a_b_split_test": {
+      "en": "A/B split test",
+      "fr-CA": "test fractionné A/B",
+      "fr": "test fractionné A/B",
+      "es": "prueba A/B",
+      "it": "test A/B"
+    },
+    "anti_spam": {
+      "en": "anti-spam",
+      "fr-CA": "anti-pourriel",
+      "fr": "antispam",
+      "es": "anti-spam",
+      "it": "anti-spam"
+    },
+    "api": {
+      "en": "API",
+      "fr-CA": "API",
+      "fr": "API",
+      "es": "API",
+      "it": "API"
+    },
+    "authentification": {
+      "en": "authentification",
+      "fr-CA": "authentification",
+      "fr": "authentification",
+      "es": "autenticación",
+      "it": "autenticazione"
+    },
+    "auto_responder": {
+      "en": "auto-responder",
+      "fr-CA": "répondeur automatique",
+      "fr": "autoresponder",
+      "es": "respuesta automática",
+      "it": "autoresponder"
+    },
+    "background_color": {
+      "en": "background color",
+      "fr-CA": "couleur d'arrière-plan",
+      "fr": "couleur de fond"
+    },
+    "bounce_message": {
+      "en": "bounce message",
+      "fr-CA": "message de rebond",
+      "fr": "message de rebond"
+    },
+    "bounce_rate": {
+      "en": "bounce rate",
+      "fr-CA": "taux de rebonds",
+      "fr": "message de rebond"
+    },
+    "browse_to": {
+      "en": "browse, to",
+      "fr-CA": "parcourir",
+      "fr": "parcourir"
+    },
+    "browser": {
+      "en": "browser",
+      "fr-CA": "navigateur",
+      "fr": "navigateur"
+    },
+    "browser_window": {
+      "en": "browser window",
+      "fr-CA": "fenêtre du navigateur",
+      "fr": "fenêtre du navigateur"
+    },
+    "can_spam": {
+      "en": "CAN-SPAM",
+      "fr-CA": "CAN-SPAM",
+      "fr": "CAN-SPAM"
+    },
+    "casl_canada_anti_spam_law": {
+      "en": "CASL Canada Anti-Spam Law",
+      "fr-CA": "Loi canadienne anti-pourriel (LCAP)",
+      "fr": "Loi canadienne anti-pourriel (LCAP)"
+    },
+    "click": {
+      "en": "click",
+      "fr-CA": "clic",
+      "fr": "clic"
+    },
+    "click_through_rate": {
+      "en": "click-through rate",
+      "fr-CA": "taux de clics",
+      "fr": "taux de clics"
+    },
+    "clicked": {
+      "en": "clicked",
+      "fr-CA": "cliqué",
+      "fr": "cliqué"
+    },
+    "complaint": {
+      "en": "complaint",
+      "fr-CA": "plainte",
+      "fr": "plainte"
+    },
+    "complaint_rate": {
+      "en": "complaint rate",
+      "fr-CA": "taux de plaintes",
+      "fr": "taux de plaintes"
+    },
+    "content_filter": {
+      "en": "content filter",
+      "fr-CA": "filtre de contenu",
+      "fr": "filtre de contenu"
+    },
+    "cookie": {
+      "en": "cookie",
+      "fr-CA": "fichier témoin",
+      "fr": "cookie"
+    },
+    "csv": {
+      "en": "CSV (comma separated value)",
+      "fr-CA": "CSV (valeurs séparées par des virgules)",
+      "fr": "CSV (valeurs séparées par des virgules)"
+    },
+    "cta": {
+      "en": "CTA",
+      "fr-CA": "Appel à l'action",
+      "fr": "Call to action"
+    },
+    "dashboard": {
+      "en": "dashboard",
+      "fr-CA": "tableau de bord",
+      "fr": "tableau de bord"
+    },
+    "date_field": {
+      "en": "date field",
+      "fr-CA": "champ de date",
+      "fr": "champ de date"
+    },
+    "default_template": {
+      "en": "default template",
+      "fr-CA": "gabarit par défaut",
+      "fr": "modèle par défaut"
+    },
+    "delivered": {
+      "en": "delivered",
+      "fr-CA": "livré",
+      "fr": "délivré"
+    },
+    "delivered_emails": {
+      "en": "delivered emails",
+      "fr-CA": "courriels livrés",
+      "fr": "emails distribués"
+    },
+    "dns_settings": {
+      "en": "DNS settings",
+      "fr-CA": "paramètres DNS",
+      "fr": "paramètres DNS"
+    },
+    "dynamic_content": {
+      "en": "dynamic content",
+      "fr-CA": "contenu dynamique",
+      "fr": "contenu dynamique"
+    },
+    "email_address": {
+      "en": "email address",
+      "fr-CA": "adresse de courriel",
+      "fr": "adresse email"
+    },
+    "email_campaign_builder": {
+      "en": "email campaign builder",
+      "fr-CA": "créateur de campagne courriel",
+      "fr": "créateur de campagnes par e-mail"
+    },
+    "email_client": {
+      "en": "email client",
+      "fr-CA": "client de messagerie",
+      "fr": "client de messagerie"
+    },
+    "email_footer": {
+      "en": "email footer",
+      "fr-CA": "bas de page du courriel",
+      "fr": "pied de page de l'e-mail"
+    },
+    "email_header": {
+      "en": "email header",
+      "fr-CA": "haut de page du courriel",
+      "fr": "en-tête de courrier électronique"
+    },
+    "email_service_provider": {
+      "en": "email service provider (ESP)",
+      "fr-CA": "fournisseur de service de marketing par courriel",
+      "fr": "fournisseur de services de messagerie (ESP)"
+    },
+    "email_throttling": {
+      "en": "email throttling",
+      "fr-CA": "limitation du débit de courriels",
+      "fr": "limitation des e-mails"
+    },
+    "engaging_content": {
+      "en": "engaging content",
+      "fr-CA": "contenu engageant",
+      "fr": "contenu engageant"
+    },
+    "explicit_consent": {
+      "en": "explicit consent (opt-in)",
+      "fr-CA": "consentement explicite",
+      "fr": "consentement explicite (opt-in)"
+    },
+    "explicitly_opt_in": {
+      "en": "explicitly opt in",
+      "fr-CA": "accepter explicitement",
+      "fr": "accepter explicitement"
+    },
+    "express_consent": {
+      "en": "express consent",
+      "fr-CA": "consentement exprès",
+      "fr": "consentement exprès"
+    },
+    "fallback_field": {
+      "en": "fallback field",
+      "fr-CA": "champ de rechange",
+      "fr": "champ de repli"
+    },
+    "fbl": {
+      "en": "FBL",
+      "fr-CA": "boucle de rétroaction",
+      "fr": "feedback loop"
+    },
+    "feedback_loop": {
+      "en": "feedback loop (FBL)",
+      "fr-CA": "boucle de rétroaction",
+      "fr": "feedback loop"
+    },
+    "filtering_software": {
+      "en": "filtering software",
+      "fr-CA": "logiciel de filtrage",
+      "fr": "logiciel de filtrage"
+    },
+    "folder": {
+      "en": "folder",
+      "fr-CA": "dossier",
+      "fr": "dossier"
+    },
+    "gear_wheel": {
+      "en": "gear wheel",
+      "fr-CA": "roue dentée",
+      "fr": "roue dentée"
+    },
+    "geographic_location": {
+      "en": "geographic location",
+      "fr-CA": "géolocalisation",
+      "fr": "situation géographique"
+    },
+    "greylisting": {
+      "en": "greylisting",
+      "fr-CA": "liste grise",
+      "fr": "liste grise"
+    },
+    "segments": {
+      "en": "segments",
+      "fr-CA": "segments",
+      "fr": "segments"
+    },
+    "heatmap": {
+      "en": "heatmap",
+      "fr-CA": "carte de clics",
+      "fr": "heatmap"
+    },
+    "honeypot": {
+      "en": "honeypot",
+      "fr-CA": "pot de miel",
+      "fr": "pot de miel"
+    },
+    "hosted_service": {
+      "en": "hosted service",
+      "fr-CA": "service hébergé",
+      "fr": "service hébergé"
+    },
+    "html_message": {
+      "en": "HTML message",
+      "fr-CA": "message HTML",
+      "fr": "message HTML"
+    },
+    "image_library": {
+      "en": "image library",
+      "fr-CA": "bibliothèque d'images",
+      "fr": "bibliothèque d'images"
+    },
+    "image_placeholder": {
+      "en": "image placeholder",
+      "fr-CA": "case d'insertion de l'image",
+      "fr": "espace réservé à l'image"
+    },
+    "implied_consent": {
+      "en": "implied consent",
+      "fr-CA": "consentement implicite",
+      "fr": "consentement implicite"
+    },
+    "implied_open": {
+      "en": "implied open",
+      "fr-CA": "ouverture implicite",
+      "fr": "implicite ouvert"
+    },
+    "import_to": {
+      "en": "import, to",
+      "fr-CA": "importer",
+      "fr": "importer, à"
+    },
+    "in_process": {
+      "en": "in process",
+      "fr-CA": "en processus",
+      "fr": "en cours"
+    },
+    "inbox_rate": {
+      "en": "inbox rate",
+      "fr-CA": "taux de réception",
+      "fr": "taux de réception"
+    },
+    "invalid": {
+      "en": "invalid",
+      "fr-CA": "invalide",
+      "fr": "invalide"
+    },
+    "ip_address": {
+      "en": "IP address",
+      "fr-CA": "adresse IP",
+      "fr": "adresse IP"
+    },
+    "isp": {
+      "en": "ISP (Internet Service Provider)",
+      "fr-CA": "FSI (fournisseur de service Internet)",
+      "fr": "FAI (Fournisseur d’accès Internet)"
+    },
+    "library": {
+      "en": "library",
+      "fr-CA": "bibliothèque",
+      "fr": "bibliothèque"
+    },
+    "list_field": {
+      "en": "list field",
+      "fr-CA": "champ de la liste",
+      "fr": "champ de liste"
+    },
+    "list_hygiene": {
+      "en": "list hygiene",
+      "fr-CA": "hygiène de la liste",
+      "fr": "hygiène de base de données"
+    },
+    "list": {
+      "en": "list(s)",
+      "fr-CA": "liste",
+      "fr": "liste(s)"
+    },
+    "log_in_to": {
+      "en": "log in, to",
+      "fr-CA": "ouvrir une session",
+      "fr": "se connecter, à"
+    },
+    "mailing": {
+      "en": "mailing",
+      "fr-CA": "envoi",
+      "fr": "envoi postal"
+    },
+    "merge_field": {
+      "en": "merge field",
+      "fr-CA": "champ de personnalisation",
+      "fr": "champ de fusion"
+    },
+    "merge_tag": {
+      "en": "merge tag",
+      "fr-CA": "balise de personnalisation",
+      "fr": "balise de fusion"
+    },
+    "notified_opt_in": {
+      "en": "notified opt-in",
+      "fr-CA": "avis de confirmation d'inscription",
+      "fr": "opt-in notifié"
+    },
+    "one_time_event": {
+      "en": "one-time event",
+      "fr-CA": "événement ponctuel",
+      "fr": "événement ponctuel"
+    },
+    "open": {
+      "en": "open",
+      "fr-CA": "ouvert",
+      "fr": "ouvert"
+    },
+    "opt_out": {
+      "en": "opt-out",
+      "fr-CA": "retrait du consentement",
+      "fr": "retrait du consentement"
+    },
+    "passive_opt_in": {
+      "en": "passive opt-in",
+      "fr-CA": "consentement implicite",
+      "fr": "consentement implicite"
+    },
+    "performance_report": {
+      "en": "performance report",
+      "fr-CA": "rapport de performance",
+      "fr": "rapport de performance"
+    },
+    "permission": {
+      "en": "permission",
+      "fr-CA": "permission",
+      "fr": "permission"
+    },
+    "permission_marketing": {
+      "en": "permission marketing",
+      "fr-CA": "marketing de permission",
+      "fr": "marketing de permission"
+    },
+    "phishing": {
+      "en": "phishing",
+      "fr-CA": "hameçonnage",
+      "fr": "phishing"
+    },
+    "physical_address": {
+      "en": "physical address",
+      "fr-CA": "adresse physique",
+      "fr": "adresse physique"
+    },
+    "placeholder": {
+      "en": "placeholder",
+      "fr-CA": "paramètre fictif",
+      "fr": "espace réservé"
+    },
+    "plain_text": {
+      "en": "plain text",
+      "fr-CA": "texte brut",
+      "fr": "texte brut"
+    },
+    "plain_text_version": {
+      "en": "plain text version",
+      "fr-CA": "version texte brut",
+      "fr": "version texte brut"
+    },
+    "point_and_click_interface": {
+      "en": "point-and-click interface",
+      "fr-CA": "interface pointer-cliquer",
+      "fr": "interface pointer-cliquer"
+    },
+    "pop_up_window": {
+      "en": "pop-up window",
+      "fr-CA": "fenêtre contextuelle",
+      "fr": "fenêtre contextuelle"
+    },
+    "programmed": {
+      "en": "programmed",
+      "fr-CA": "planifié",
+      "fr": "programmé"
+    },
+    "progress_indicator": {
+      "en": "progress indicator",
+      "fr-CA": "indicateur de progression",
+      "fr": "indicateur de progression"
+    },
+    "promotional_mailing": {
+      "en": "promotional mailing",
+      "fr-CA": "publipostage",
+      "fr": "publipostage promotionnel"
+    },
+    "qr_code": {
+      "en": "QR code",
+      "fr-CA": "code QR",
+      "fr": "code QR"
+    },
+    "radio_button": {
+      "en": "radio button",
+      "fr-CA": "bouton radio",
+      "fr": "bouton radio"
+    },
+    "reactivity": {
+      "en": "reactivity",
+      "fr-CA": "réactivité",
+      "fr": "réactivité"
+    },
+    "reactivity_rate": {
+      "en": "reactivity rate",
+      "fr-CA": "taux de réactivité",
+      "fr": "taux de réactivité"
+    },
+    "reconfirmation_campaign": {
+      "en": "reconfirmation campaign",
+      "fr-CA": "campagne de reconfirmation",
+      "fr": "campagne de reconquête"
+    },
+    "redirection_link": {
+      "en": "redirection link",
+      "fr-CA": "lien de redirection",
+      "fr": "lien de redirection"
+    },
+    "reply_to_email": {
+      "en": "reply-to email",
+      "fr-CA": "adresse courriel de réponse",
+      "fr": "Adresse du destinataire de la réponse"
+    },
+    "reseller": {
+      "en": "reseller",
+      "fr-CA": "revendeur",
+      "fr": "revendeur"
+    },
+    "responsive_design": {
+      "en": "responsive design",
+      "fr-CA": "design réactif",
+      "fr": "responsive design"
+    },
+    "role_account": {
+      "en": "role account",
+      "fr-CA": "compte de fonction",
+      "fr": "compte de rôle"
+    },
+    "role_based_account": {
+      "en": "role-based account",
+      "fr-CA": "compte basé sur les rôles",
+      "fr": "compte basé sur les rôles"
+    },
+    "scheduled_campaign": {
+      "en": "scheduled campaign",
+      "fr-CA": "campagne programmée",
+      "fr": "campagne programmée"
+    },
+    "segment": {
+      "en": "segment",
+      "fr-CA": "segment",
+      "fr": "segment"
+    },
+    "sent": {
+      "en": "sent",
+      "fr-CA": "expédié",
+      "fr": "expédié"
+    },
+    "sent_email": {
+      "en": "sent email",
+      "fr-CA": "courriel expédié",
+      "fr": "email expédié"
+    },
+    "settings": {
+      "en": "settings",
+      "fr-CA": "paramètres",
+      "fr": "paramètres"
+    },
+    "sign_up": {
+      "en": "sign up",
+      "fr-CA": "inscription",
+      "fr": "inscription"
+    },
+    "single_opt_in": {
+      "en": "single opt-in",
+      "fr-CA": "consentement simple",
+      "fr": "simple opt-in"
+    },
+    "smb": {
+      "en": "SMB",
+      "fr-CA": "PME",
+      "fr": "PME"
+    },
+    "social_media_toolbar": {
+      "en": "social media toolbar",
+      "fr-CA": "barre de médias sociaux",
+      "fr": "barre de médias sociaux"
+    },
+    "spam_complaint": {
+      "en": "spam complaint",
+      "fr-CA": "plainte de pourriel",
+      "fr": "plainte pour spam"
+    },
+    "spam_filter": {
+      "en": "Spam Filter",
+      "fr-CA": "filtre anti-pourriel",
+      "fr": "filtre anti-spam"
+    },
+    "spam_score": {
+      "en": "spam score",
+      "fr-CA": "indice de pourriels",
+      "fr": "score de spam"
+    },
+    "spam_trap": {
+      "en": "spam trap",
+      "fr-CA": "piège à pourriels",
+      "fr": "adresse piège"
+    },
+    "spamming": {
+      "en": "spamming",
+      "fr-CA": "pollupostage",
+      "fr": "spam"
+    },
+    "subscription_forms": {
+      "en": "subscription forms",
+      "fr-CA": "formulaire d'abonnement",
+      "fr": "formulaire d'abonnement"
+    },
+    "suppression_list": {
+      "en": "suppression list",
+      "fr-CA": "liste de suppression",
+      "fr": "liste de suppression"
+    },
+    "suspended": {
+      "en": "suspended",
+      "fr-CA": "suspendu",
+      "fr": "suspendu"
+    },
+    "tab": {
+      "en": "tab",
+      "fr-CA": "onglet",
+      "fr": "onglet"
+    },
+    "tag": {
+      "en": "tag",
+      "fr-CA": "balise",
+      "fr": "balise"
+    },
+    "tag_html": {
+      "en": "tag HTML",
+      "fr-CA": "balise HTML",
+      "fr": "balise HTML"
+    },
+    "template_library": {
+      "en": "template library",
+      "fr-CA": "bibliothèque de gabarits",
+      "fr": "bibliothèque de modèles"
+    },
+    "third_party_software": {
+      "en": "third-party software",
+      "fr-CA": "logiciel tiers",
+      "fr": "logiciel tiers"
+    },
+    "throttling": {
+      "en": "throttling",
+      "fr-CA": "limitation du débit de courriel",
+      "fr": "limitation du volume d’envoi"
+    },
+    "thumbnail": {
+      "en": "thumbnail",
+      "fr-CA": "vignette",
+      "fr": "vignette"
+    },
+    "toolkit": {
+      "en": "toolkit",
+      "fr-CA": "boîte à outils",
+      "fr": "boîte à outils"
+    },
+    "tracking_link": {
+      "en": "tracking link",
+      "fr-CA": "lien de suivi",
+      "fr": "lien de suivi"
+    },
+    "transactional_email": {
+      "en": "transactional email",
+      "fr-CA": "courriel transactionnel",
+      "fr": "email transactionnel"
+    },
+    "transcient_bounce": {
+      "en": "transcient bounce",
+      "fr-CA": "rebond transitoire",
+      "fr": "rebond transitoire"
+    },
+    "unacceptable_use": {
+      "en": "unacceptable use",
+      "fr-CA": "utilisation inacceptable",
+      "fr": "utilisation inacceptable"
+    },
+    "unsolicited_bulk_email": {
+      "en": "unsolicited bulk email (UBE)",
+      "fr-CA": "courriel non sollicité",
+      "fr": "email non sollicité"
+    },
+    "unsusbcribed": {
+      "en": "unsusbcribed",
+      "fr-CA": "désabonné",
+      "fr": "désabonné"
+    },
+    "upgrade_to_an_account": {
+      "en": "upgrade, to an account",
+      "fr-CA": "passer à un forfait supérieur",
+      "fr": "mise à niveau"
+    },
+    "upload_to": {
+      "en": "upload, to",
+      "fr-CA": "téléverser",
+      "fr": "télécharger, à"
+    },
+    "username": {
+      "en": "username",
+      "fr-CA": "nom d'utilisateur",
+      "fr": "nom d'utilisateur"
+    },
+    "utm_parameters": {
+      "en": "UTM parameters",
+      "fr-CA": "paramètres UTM",
+      "fr": "paramètres UTM",
+      "es": "parámetros UTM",
+      "it": "parametri UTM"
+    },
+    "whitepaper": {
+      "en": "whitepaper",
+      "fr-CA": "livre blanc",
+      "fr": "livre blanc",
+      "es": "libro blanco",
+      "it": "whitepaper"
+    },
+    "widget": {
+      "en": "widget",
+      "fr-CA": "widget",
+      "fr": "widget",
+      "es": "widget",
+      "it": "widget"
+    },
+    "xml": {
+      "en": "XML",
+      "fr-CA": "langage XML",
+      "fr": "",
+      "es": "XML",
+      "it": "XML"
+    },
+    "consent": {
+      "en": "consent",
+      "fr": "consentement",
+      "fr-CA": "consentement",
+      "es": "consentimiento",
+      "it": "consenso"
+    },
+    "data_protection": {
+      "en": "data protection",
+      "fr": "protection des données",
+      "fr-CA": "protection des données",
+      "es": "protección de datos",
+      "it": "protezione dei dati"
+    },
+    "distribution_list": {
+      "en": "distribution list",
+      "fr": "liste de diffusion",
+      "fr-CA": "liste de distribution",
+      "es": "lista de distribución",
+      "it": "lista di distribuzione"
+    },
+    "cold_email": {
+      "en": "cold email",
+      "fr": "email froid",
+      "fr-CA": "courriel froid",
+      "es": "correo frío",
+      "it": "email a freddo"
+    },
+    "message_body": {
+      "en": "message body",
+      "fr": "corps du message",
+      "fr-CA": "corps du message",
+      "es": "cuerpo del mensaje",
+      "it": "corpo del messaggio"
+    },
+    "electronic_bulletin": {
+      "en": "electronic bulletin",
+      "fr": "bulletin électronique",
+      "fr-CA": "bulletin électronique",
+      "es": "boletín electrónico",
+      "it": "bollettino elettronico"
+    },
+    "subscription_form": {
+      "en": "subscription form",
+      "fr": "formulaire d'abonnement",
+      "fr-CA": "formulaire d'abonnement",
+      "es": "formulario de suscripción",
+      "it": "modulo di iscrizione"
+    },
+    "affirmative_consent": {
+      "en": "affirmative consent",
+      "fr": "consentement affirmatif",
+      "fr-CA": "consentement affirmatif",
+      "es": "consentimiento afirmativo",
+      "it": "consenso affermativo"
+    },
+    "lgpd": {
+      "en": "LGPD (Lei Geral de Proteção de Dados)",
+      "fr": "LGPD (Loi générale sur la protection des données du Brésil)",
+      "fr-CA": "LGPD (Loi générale sur la protection des données du Brésil)",
+      "es": "LGPD (Ley General de Protección de Datos)",
+      "it": "LGPD (Legge Generale sulla Protezione dei Dati del Brasile)"
+    },
+    "web_analytics": {
+      "en": "web analytics",
+      "fr": "analytique web",
+      "fr-CA": "analytique web",
+      "es": "analítica web",
+      "it": "analisi web"
+    }
+  },
+  "regional_notes": {
+    "fr-CA": {
+      "description": "French Canadian terminology differs from French France primarily in technology terms",
+      "key_differences": [
+        "email → courriel (instead of email)",
+        "spam → pourriel (instead of spam)",
+        "template → gabarit (instead of modèle)",
+        "landing page → page de destination (instead of page d'atterrissage)",
+        "opt-in → abonnement (instead of inscription)"
+      ],
+      "usage_notes": "French Canadian tends to avoid anglicisms more than French France"
+    },
+    "es": {
+      "description": "Spanish email marketing terminology with regional variations across Latin America",
+      "key_differences": [
+        "newsletter → boletín informativo/electrónico (instead of newsletter)",
+        "email → correo electrónico (formal) vs email (informal)",
+        "consent → consentimiento (legal context)",
+        "spam → spam (universally used)",
+        "cold email → correo frío (newer term)"
+      ],
+      "usage_notes": "Legal terms like 'consentimiento' and 'protección de datos' are standardized across Spanish-speaking countries, but local privacy laws vary (LGPD in Brazil, PDPA in Argentina, Law 1581 in Colombia)",
+      "regional_laws": {
+        "brazil": "LGPD (Lei Geral de Proteção de Dados)",
+        "argentina": "PDPA (Personal Data Protection Act 25.326)",
+        "colombia": "Law 1581 of 2012",
+        "mexico": "Personal Data Protection Law",
+        "spain": "RGPD + LOPDGDD"
+      }
+    }
+  },
+  "acronyms_preserve": {
+    "description": "These acronyms should never be translated",
+    "list": [
+      "API",
+      "B2B",
+      "B2C",
+      "CAN-SPAM",
+      "CASL",
+      "CRM",
+      "CSS",
+      "CTA",
+      "DKIM",
+      "DMARC",
+      "DNS",
+      "ESP",
+      "FBL",
+      "GDPR",
+      "HTML",
+      "IP",
+      "ISP",
+      "KPI",
+      "RGPD",
+      "ROI",
+      "SMB",
+      "SMTP",
+      "SPF",
+      "URL",
+      "XML",
+      "LGPD",
+      "PDPA",
+      "LOPDGDD"
+    ]
+  },
+  "brand_names_preserve": {
+    "description": "Brand names that should remain unchanged",
+    "list": [
+      "Cakemail",
+      "Gmail",
+      "Outlook",
+      "Yahoo",
+      "Hotmail",
+      "Apple Mail",
+      "Thunderbird",
+      "SendGrid",
+      "Mailchimp",
+      "HubSpot",
+      "Salesforce",
+      "Argentina",
+      "Brasil",
+      "Colombia",
+      "México",
+      "España",
+      "Chile",
+      "Perú",
+      "Venezuela"
+    ]
+  },
+  "ui_elements": {
+    "button": {
+      "en": "button",
+      "fr": "bouton",
+      "fr-CA": "bouton",
+      "es": "botón",
+      "it": "pulsante"
+    },
+    "link": {
+      "en": "link",
+      "fr": "lien",
+      "fr-CA": "lien",
+      "es": "enlace",
+      "it": "link"
+    },
+    "form": {
+      "en": "form",
+      "fr": "formulaire",
+      "fr-CA": "formulaire",
+      "es": "formulario",
+      "it": "modulo"
+    },
+    "field": {
+      "en": "field",
+      "fr": "champ",
+      "fr-CA": "champ",
+      "es": "campo",
+      "it": "campo"
+    },
+    "submit": {
+      "en": "submit",
+      "fr": "soumettre",
+      "fr-CA": "soumettre",
+      "es": "enviar",
+      "it": "invia"
+    },
+    "cancel": {
+      "en": "cancel",
+      "fr": "annuler",
+      "fr-CA": "annuler",
+      "es": "cancelar",
+      "it": "annulla"
+    },
+    "save": {
+      "en": "save",
+      "fr": "enregistrer",
+      "fr-CA": "sauvegarder",
+      "es": "guardar",
+      "it": "salva"
+    },
+    "delete": {
+      "en": "delete",
+      "fr": "supprimer",
+      "fr-CA": "supprimer",
+      "es": "eliminar",
+      "it": "elimina"
+    },
+    "edit": {
+      "en": "edit",
+      "fr": "modifier",
+      "fr-CA": "modifier",
+      "es": "editar",
+      "it": "modifica"
+    }
+  }
+}

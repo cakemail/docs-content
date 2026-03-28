@@ -1,0 +1,21 @@
+name: Fix Translation
+description: Report a problem with a translated article
+labels: [fix-translation]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Translation path
+      description: "Path to the translated article file"
+      placeholder: "e.g., fr-ca/docs/account-settings/adding-and-editing-users.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: instructions
+    attributes:
+      label: What's wrong
+      description: "Describe the translation problem. Include the incorrect text and what it should say."
+      placeholder: "The term 'email' should be 'courriel' in this article..."
+    validations:
+      required: true
