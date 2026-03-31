@@ -4,7 +4,7 @@ Multilingual documentation content for Cakemail products, managed by an AI-drive
 
 ## How content is managed
 
-Content is managed through **GitHub Issues**. You create an issue using one of the templates below, tag `@claude`, and Claude opens a PR with the changes. A human reviews and merges.
+Content is managed through **GitHub Issues**. You create an issue using one of the templates below, tag `@claude`, and Claude makes the changes on the `staging` branch.
 
 ### Issue types
 
@@ -22,9 +22,10 @@ Content is managed through **GitHub Issues**. You create an issue using one of t
 1. Go to **Issues → New Issue** and pick a template
 2. Fill in the fields and submit
 3. Tag `@claude` in a comment (or the issue body)
-4. Claude opens a PR with the changes
-5. Review and merge the PR
-6. For source articles with translations, merging automatically creates translation-update issues
+4. Claude commits the changes to the `staging` branch
+5. Review changes on the staging environment
+6. When ready to release, merge `staging → main` via a pull request
+7. Merging to `main` deploys to production and triggers translation issues automatically
 
 ## Repository structure
 
@@ -63,7 +64,7 @@ Index pages use `.mdx` and live alongside their directory (e.g., `en/best-practi
 | `sidebars.json` | Sidebar navigation tree per language — article ordering and categories |
 | `sections.json` | Top-level navigation sections with multilingual labels |
 
-These files are updated automatically as part of article creation, deletion, and reorganization PRs.
+These files are updated automatically as part of article creation, deletion, and reorganization commits.
 
 ## Consumers
 

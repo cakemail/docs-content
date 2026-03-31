@@ -1,14 +1,15 @@
 # AI CMS — Content Management via GitHub Issues
 
-This repository is an AI-driven CMS. Content is authored and maintained by Claude in response to GitHub Issues. Humans and AI agents create issues with instructions; Claude generates or edits content and opens PRs.
+This repository is an AI-driven CMS. Content is authored and maintained by Claude in response to GitHub Issues. Humans and AI agents create issues with instructions; Claude makes changes on the `staging` branch.
 
 ## How it works
 
 1. An issue is created (by a human or an AI agent) with structured instructions
 2. Claude (@claude) is tagged on the issue
-3. Claude reads the issue, follows these instructions, and opens a PR
-4. A human reviews and merges (unless the issue is labeled `auto-approve`)
-5. Merging a source article triggers translation issues automatically
+3. Claude reads the issue, follows these instructions, and commits to `staging`
+4. Changes are reviewed on the staging environment
+5. When ready to release, a PR is opened from `staging → main`
+6. Merging to `main` triggers translation issues automatically
 
 ## Repository structure
 
@@ -72,7 +73,7 @@ source_version: abc123f
 3. Write the article following the appropriate content pattern (see below)
 4. Add frontmatter with `translate_to` based on the issue's translation checkboxes
 5. Add the article to `sidebars.json` in the appropriate category for all languages (see "Maintaining sidebars.json and sections.json")
-6. Open a PR linked to the issue
+6. Commit with message referencing the issue (e.g., `Add article: Title — Closes #N`)
 
 ### Issue type: `edit-article`
 
@@ -80,14 +81,14 @@ source_version: abc123f
 2. Apply the requested changes, preserving content you weren't asked to change
 3. Update the `title` in frontmatter if it changed
 4. If the title changed, update the label in `sidebars.json` if the article has an explicit label
-5. Open a PR linked to the issue
+5. Commit with message referencing the issue (e.g., `Edit article: Title — Closes #N`)
 
 ### Issue type: `fix-translation`
 
 1. Read the translation file and its source article
 2. Apply the fix described in the issue
 3. Update `source_version` to the current HEAD commit of the source article
-4. Open a PR linked to the issue
+4. Commit with message referencing the issue (e.g., `Fix translation: lang Title — Closes #N`)
 
 ### Issue type: `delete-article`
 
@@ -96,7 +97,7 @@ source_version: abc123f
 3. Delete all translation files (mirrored paths in each target language directory)
 4. Remove the article from `sidebars.json` for all languages (see "Maintaining sidebars.json and sections.json")
 5. If a category becomes empty after deletion, remove the category from `sidebars.json`
-6. Open a PR linked to the issue
+6. Commit with message referencing the issue (e.g., `Delete article: Title — Closes #N`)
 
 ### Issue type: `reorganize-content`
 
@@ -104,7 +105,7 @@ source_version: abc123f
 2. Apply changes to `sidebars.json`, `sections.json`, or both as specified
 3. If articles are moved between categories, update file paths and any internal links
 4. Ensure all languages stay in sync — the same structural changes must apply to every language in `sidebars.json`
-5. Open a PR linked to the issue
+5. Commit with message referencing the issue (e.g., `Reorganize: description — Closes #N`)
 
 ### Issue type: `translation-update`
 
@@ -112,7 +113,7 @@ source_version: abc123f
 2. Read the existing translation (if any)
 3. Generate a full translation using the appropriate translator agent (see below)
 4. Set `source_version` to the commit SHA from the issue
-5. Open a PR linked to the issue
+5. Commit with message referencing the issue (e.g., `Translate to lang: Title — Closes #N`)
 
 ## Content patterns
 
@@ -231,16 +232,14 @@ Only when a `reorganize-content` issue explicitly requests section-level changes
 - Article IDs in sidebars use the path without language prefix or file extension: `best-practices/getting-started/my-article` (not `en/best-practices/getting-started/my-article.md`)
 - When creating a new category, provide translated labels for all languages
 
-## Branch naming
+## Branching and releases
 
-- New articles: `content/{slug}`
-- Edits: `edit/{slug}`
-- Deletions: `delete/{slug}`
-- Reorganizations: `reorganize/{short-description}`
-- Translations: `translate/{lang}/{slug}`
+All content changes are committed to the `staging` branch. The `staging` branch is auto-deployed to the staging environment for review.
 
-## PR conventions
+To release to production, open a PR from `staging → main`. Merging to `main` deploys to production and triggers translation-sync issues for any source articles that changed.
 
-- Title: brief description of the change
-- Body: reference the issue with `Closes #N`
-- One article per PR (source article only — translations get their own issues and PRs)
+## Commit conventions
+
+- Each issue produces one commit on `staging`
+- Commit messages reference the issue: `Closes #N`
+- One article per commit (source article only — translations get their own issues)

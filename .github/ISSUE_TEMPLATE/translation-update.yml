@@ -1,6 +1,6 @@
 name: Translation Update
 description: "[Auto-created] Source article changed, translation needs update"
-labels: [translation-update, auto-approve]
+labels: [translation-update]
 body:
   - type: input
     id: source_file

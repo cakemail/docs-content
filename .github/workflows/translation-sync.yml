@@ -103,7 +103,7 @@ The source article was updated. Please update the ${lang} translation to match.
                   repo: context.repo.repo,
                   title: `[Translation] Update ${lang} translation: ${title}`,
                   body: issueBody,
-                  labels: ['translation-update', 'auto-approve'],
+                  labels: ['translation-update'],
                 });
 
                 console.log(`Created translation issue: ${file} → ${lang}`);
