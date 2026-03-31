@@ -16,7 +16,7 @@ This repository is an AI-driven CMS. Content is authored and maintained by Claud
 {lang}/{content-type}/{category}/{slug}.md
 ```
 
-- **Languages**: `en`, `es`, `fr-ca`
+- **Languages**: `en`, `fr`, `fr-ca`, `es`
 - **Content types**: `docs` (knowledge base), `best-practices`, `guides`, `api`, `resources-support`
 - **Slugs**: lowercase, hyphenated, descriptive (e.g., `adding-and-editing-users.md`)
 
@@ -33,7 +33,7 @@ Every article MUST have frontmatter. When editing an existing article that lacks
 title: "Article Title"
 lang: en
 content_type: docs
-translate_to: [es, fr-ca]
+translate_to: [fr, fr-ca, es]
 ---
 ```
 
@@ -57,7 +57,7 @@ source_version: abc123f
 | Field | Required | Description |
 |-------|----------|-------------|
 | `title` | yes | Article title in the article's language |
-| `lang` | yes | Language code: `en`, `es`, `fr-ca` |
+| `lang` | yes | Language code: `en`, `fr`, `fr-ca`, `es` |
 | `content_type` | yes | One of: `docs`, `best-practices`, `guides`, `api`, `resources-support` |
 | `translate_to` | source only | Target languages for translation |
 | `source` | translations only | Path to source article (relative to repo root) |
@@ -188,6 +188,7 @@ When translating content, use the appropriate agent from `.claude/agents/localiz
 
 | Target language | Agent |
 |----------------|-------|
+| `fr` | `french-translator.md` |
 | `fr-ca` | `french-translator.md` + `french-canada-adapter.md` |
 | `es` | `spanish-translator.md` |
 

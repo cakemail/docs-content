@@ -20,8 +20,9 @@ body:
       description: The language this article will be written in originally
       options:
         - en
-        - es
+        - fr
         - fr-ca
+        - es
     validations:
       required: true
 
@@ -50,5 +51,6 @@ body:
       description: Select target languages for translation (after the source article is approved)
       options:
         - label: English (en)
-        - label: Spanish (es)
+        - label: French (fr)
         - label: French — Canada (fr-ca)
+        - label: Spanish (es)

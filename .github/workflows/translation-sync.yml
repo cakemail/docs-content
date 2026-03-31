@@ -5,8 +5,9 @@ on:
     branches: [main]
     paths:
       - 'en/**/*.md'
-      - 'es/**/*.md'
+      - 'fr/**/*.md'
       - 'fr-ca/**/*.md'
+      - 'es/**/*.md'
 
 jobs:
   detect-and-create-issues:
