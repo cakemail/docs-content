@@ -71,14 +71,16 @@ source_version: abc123f
 2. Determine the file path from the content type, category, and a slug derived from the title
 3. Write the article following the appropriate content pattern (see below)
 4. Add frontmatter with `translate_to` based on the issue's translation checkboxes
-5. Open a PR linked to the issue
+5. Add the article to `sidebars.json` in the appropriate category for all languages (see "Maintaining sidebars.json and sections.json")
+6. Open a PR linked to the issue
 
 ### Issue type: `edit-article`
 
 1. Read the existing article at the specified path
 2. Apply the requested changes, preserving content you weren't asked to change
 3. Update the `title` in frontmatter if it changed
-4. Open a PR linked to the issue
+4. If the title changed, update the label in `sidebars.json` if the article has an explicit label
+5. Open a PR linked to the issue
 
 ### Issue type: `fix-translation`
 
@@ -86,6 +88,23 @@ source_version: abc123f
 2. Apply the fix described in the issue
 3. Update `source_version` to the current HEAD commit of the source article
 4. Open a PR linked to the issue
+
+### Issue type: `delete-article`
+
+1. Read the source article's frontmatter to find its `translate_to` languages
+2. Delete the source article file
+3. Delete all translation files (mirrored paths in each target language directory)
+4. Remove the article from `sidebars.json` for all languages (see "Maintaining sidebars.json and sections.json")
+5. If a category becomes empty after deletion, remove the category from `sidebars.json`
+6. Open a PR linked to the issue
+
+### Issue type: `reorganize-content`
+
+1. Read the issue instructions describing the desired reorganization
+2. Apply changes to `sidebars.json`, `sections.json`, or both as specified
+3. If articles are moved between categories, update file paths and any internal links
+4. Ensure all languages stay in sync — the same structural changes must apply to every language in `sidebars.json`
+5. Open a PR linked to the issue
 
 ### Issue type: `translation-update`
 
@@ -185,10 +204,38 @@ Translation rules:
 - Never translate brand names (Cakemail, etc.)
 - File path mirrors source: if source is `en/docs/foo/bar.md`, translation is `fr-ca/docs/foo/bar.md`
 
+## Maintaining sidebars.json and sections.json
+
+Two JSON files control site navigation and must be kept in sync with content changes:
+
+- **`sidebars.json`** — defines the sidebar navigation tree per language. Each language key contains content-type keys, each with an array of categories and doc references.
+- **`sections.json`** — defines top-level navigation sections (e.g., "Documentation", "Best Practices") with multilingual labels and descriptions.
+
+### When to update sidebars.json
+
+| Issue type | Action |
+|-----------|--------|
+| `new-article` | Add the article ID to the appropriate category. Append to the end of the category's items. If the category doesn't exist, create it in all languages. |
+| `delete-article` | Remove the article ID from all languages. Remove empty categories. |
+| `edit-article` | Update the label if the article has an explicit label object and the title changed. |
+| `reorganize-content` | Apply the requested structural changes across all languages. |
+
+### When to update sections.json
+
+Only when a `reorganize-content` issue explicitly requests section-level changes (adding, removing, renaming, or reordering top-level sections).
+
+### Rules
+
+- All languages in `sidebars.json` must have the same structure — same categories in the same order, same articles in the same order. Only labels differ.
+- Article IDs in sidebars use the path without language prefix or file extension: `best-practices/getting-started/my-article` (not `en/best-practices/getting-started/my-article.md`)
+- When creating a new category, provide translated labels for all languages
+
 ## Branch naming
 
 - New articles: `content/{slug}`
 - Edits: `edit/{slug}`
+- Deletions: `delete/{slug}`
+- Reorganizations: `reorganize/{short-description}`
 - Translations: `translate/{lang}/{slug}`
 
 ## PR conventions

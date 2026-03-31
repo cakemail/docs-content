@@ -1,0 +1,28 @@
+name: Reorganize Content
+description: Request changes to site navigation, sidebar ordering, sections, or content hierarchy
+labels: [reorganize-content]
+body:
+  - type: textarea
+    id: instructions
+    attributes:
+      label: What to change
+      description: "Describe the reorganization. This can include reordering sidebar items, renaming categories, moving articles between categories, adding/removing sections, or changing navigation structure."
+      placeholder: |
+        Examples:
+        - Move "glossary-of-email-marketing-terms" from getting-started to a new "reference" category
+        - Reorder the deliverability category to put the complete guide first
+        - Add a new section for "Integrations"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      description: "What does this reorganization affect?"
+      options:
+        - Sidebars only (article ordering and categories)
+        - Sections (top-level navigation)
+        - Both sidebars and sections
+    validations:
+      required: true

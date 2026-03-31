@@ -1,0 +1,21 @@
+name: Delete Article
+description: Request deletion of an article and its translations
+labels: [delete-article]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Article path
+      description: "Path to the source article file relative to the repo root"
+      placeholder: "e.g., en/docs/account-settings/adding-and-editing-users.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for deletion
+      description: "Why should this article be removed?"
+      placeholder: "This article is outdated because..."
+    validations:
+      required: true
