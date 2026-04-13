@@ -41,7 +41,8 @@
         "en": "Step-by-step guides for integrating with the Cakemail API.",
         "fr": "Guides étape par étape pour l'intégration avec l'API Cakemail.",
         "es": "Guías paso a paso para integrar con la API de Cakemail."
-      }
+      },
+      "showInNav": false
     },
     {
       "id": "claude",
@@ -55,7 +56,8 @@
         "en": "Use Cakemail directly from Claude with our MCP integration.",
         "fr": "Utilisez Cakemail directement depuis Claude avec notre intégration MCP.",
         "es": "Usa Cakemail directamente desde Claude con nuestra integración MCP."
-      }
+      },
+      "showInNav": false
     },
     {
       "id": "api",
@@ -70,7 +72,8 @@
         "fr": "Référence API complète avec des exemples interactifs.",
         "es": "Referencia completa de la API con ejemplos interactivos."
       },
-      "external": false
+      "external": false,
+      "showInNav": false
     },
     {
       "id": "resources-support",
